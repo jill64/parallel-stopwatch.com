@@ -30,13 +30,13 @@ devDependencies:
     specifier: 1.38.1
     version: 1.38.1
   '@sentry/svelte':
-    specifier: ^7.71.0
+    specifier: 7.71.0
     version: 7.71.0(svelte@4.2.1)
   '@sveltejs/adapter-cloudflare':
     specifier: 2.3.3
     version: 2.3.3(@sveltejs/kit@1.25.1)
   '@sveltejs/adapter-static':
-    specifier: ^2.0.3
+    specifier: 2.0.3
     version: 2.0.3(@sveltejs/kit@1.25.1)
   '@sveltejs/kit':
     specifier: 1.25.1
