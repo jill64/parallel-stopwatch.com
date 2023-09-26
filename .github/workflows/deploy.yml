@@ -9,5 +9,6 @@ permissions:
   id-token: write
 
 jobs:
-  publish-pages:
+  deploy:
     uses: jill64/workflows/.github/workflows/publish-pages.yml@main
+    secrets: inherit
