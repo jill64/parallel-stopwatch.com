@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000" version="1.1"
+    viewBox="0 0 258 135" fill="#FFF" stroke-miterlimit="10" stroke-width="2" style="background-color: #FFF;">
+    <g>
+        <rect x="-0.57" y="-0.5" width="257.14" height="135" stroke="none" />
+        <ellipse cx="138" cy="67" rx="40" ry="40" />
+        <ellipse cx="128" cy="67" rx="40" ry="40" />
+        <ellipse cx="118" cy="67" rx="40" ry="40" />
+        <path d="M 118 37 L 118 27" fill="none" />
+        <path d="M 78 67 L 88 67" fill="none" />
+        <path d="M 132 81 L 118 67 L 118 47" fill="none" />
+        <path d="M 118 107 L 118 97" fill="none" />
+        <path d="M 148 67 L 158 67" fill="none" />
+        <path d="M 118 27 L 118 17" fill="none" />
+        <path d="M 128 17 L 108 17" fill="none" />
+    </g>
+</svg>

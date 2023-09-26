@@ -1,0 +1,13 @@
+name: Deploy
+
+on:
+  push:
+    branches: main
+
+permissions:
+  pages: write
+  id-token: write
+
+jobs:
+  publish-pages:
+    uses: jill64/workflows/.github/workflows/publish-pages.yml@main
