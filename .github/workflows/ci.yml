@@ -1,0 +1,18 @@
+name: CI
+
+on: push
+
+jobs:
+  lint:
+    uses: jill64/workflows/.github/workflows/lint.yml@main
+  build:
+    uses: jill64/workflows/.github/workflows/build.yml@main
+    with:
+      build-command: export PUBLIC_SENTRY_DSN= && pnpm build
+  coverage:
+    uses: jill64/workflows/.github/workflows/coverage.yml@main
+    secrets: inherit
+  check:
+    uses: jill64/workflows/.github/workflows/check.yml@main
+    with:
+      check-command: export PUBLIC_SENTRY_DSN= && pnpm check
