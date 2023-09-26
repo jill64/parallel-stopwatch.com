@@ -7,7 +7,7 @@
   import { Toaster } from '@jill64/svelte-toast'
   import * as Sentry from '@sentry/svelte'
   import '../app.postcss'
-    import { base } from '$app/paths'
+  import { base } from '$app/paths'
 
   Sentry.init({
     dsn: PUBLIC_SENTRY_DSN,
