@@ -11,3 +11,4 @@ jobs:
       test-command: pnpx playwright install && export PUBLIC_SENTRY_DSN= && pnpm test:e2e
   auto-merge:
     uses: jill64/workflows/.github/workflows/auto-merge.yml@main
+    secrets: inherit
