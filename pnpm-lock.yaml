@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@jill64/downloads-local':
-    specifier: 1.0.2
-    version: 1.0.2
+    specifier: 1.0.3
+    version: 1.0.3
   '@jill64/svelte-device-theme':
     specifier: 1.0.2
     version: 1.0.2(svelte@4.2.1)
@@ -409,8 +409,8 @@ packages:
       is-promise: 4.0.0
     dev: true
 
-  /@jill64/downloads-local@1.0.2:
-    resolution: {integrity: sha512-BY2AqiDeIVmYlGDCISOKAnLwFedYcNU7GxWsNDfFctvaSnvql9N2iiNULxxNLpcu0rSLQCgOHiMQcpkJW8+8ug==}
+  /@jill64/downloads-local@1.0.3:
+    resolution: {integrity: sha512-AXtWkSS4c8nTsH9AUd7koEjSNM/pF5Dzrd6qOH4N+LcYFV6z1Uol5LgK5WmlPKE40f8UySXICsmZhDj+j6KZYg==}
     dev: true
 
   /@jill64/svelte-device-theme@1.0.2(svelte@4.2.1):
