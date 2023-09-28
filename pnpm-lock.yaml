@@ -9,8 +9,8 @@ devDependencies:
     specifier: 1.0.3
     version: 1.0.3
   '@jill64/svelte-device-theme':
-    specifier: 1.0.2
-    version: 1.0.2(svelte@4.2.1)
+    specifier: 1.0.3
+    version: 1.0.3(svelte@4.2.1)
   '@jill64/svelte-inline-modal':
     specifier: 1.0.4
     version: 1.0.4(svelte@4.2.1)
@@ -413,8 +413,8 @@ packages:
     resolution: {integrity: sha512-AXtWkSS4c8nTsH9AUd7koEjSNM/pF5Dzrd6qOH4N+LcYFV6z1Uol5LgK5WmlPKE40f8UySXICsmZhDj+j6KZYg==}
     dev: true
 
-  /@jill64/svelte-device-theme@1.0.2(svelte@4.2.1):
-    resolution: {integrity: sha512-vuBqDDeNnR8jOBhY5J8k/eg1Cc8xMZaDE64aY9XzD+hCzZhejxY2SpLvz3VgW6Yu6u35e9P12XJyrEm4ojeX6A==}
+  /@jill64/svelte-device-theme@1.0.3(svelte@4.2.1):
+    resolution: {integrity: sha512-u1EJkSSq5JlaqVsji/Zh6Ks9Bxa7GHc/oKXQMUe9rYx9k7pvB/b098h7kwnw+PArevlHIoSvNOxMGNeebQlvQw==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
@@ -434,7 +434,7 @@ packages:
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      '@jill64/svelte-device-theme': 1.0.2(svelte@4.2.1)
+      '@jill64/svelte-device-theme': 1.0.3(svelte@4.2.1)
       svelte: 4.2.1
       svelte-french-toast: 1.2.0(svelte@4.2.1)
     dev: true
