@@ -24,8 +24,8 @@ devDependencies:
     specifier: 0.1.1
     version: 0.1.1(tailwindcss@3.3.3)
   '@jill64/typed-storage':
-    specifier: 0.3.2
-    version: 0.3.2
+    specifier: 0.3.4
+    version: 0.3.4
   '@playwright/test':
     specifier: 1.38.1
     version: 1.38.1
@@ -455,8 +455,8 @@ packages:
       tailwindcss: 3.3.3
     dev: true
 
-  /@jill64/typed-storage@0.3.2:
-    resolution: {integrity: sha512-RCGEF4dXm42/d7IwDTlV0wRBQoDvR94pz1N0qxsRsJrFJUEWkgb3XibxqTJlcsf3ghMEUd3I3gKNFtNyEWiaig==}
+  /@jill64/typed-storage@0.3.4:
+    resolution: {integrity: sha512-RLp2ympURJnVrHSM8st57TWl5IiuLZyf9t+8P3WuOt8xPmBlq/j798cPtYlD65P0mZUwRn8NeQDV3r4BWetpJg==}
     dependencies:
       '@jill64/attempt': 1.0.0
     dev: true
