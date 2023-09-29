@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.0.4
     version: 1.0.4(tailwindcss@3.3.3)
   '@jill64/tailwind-reactions':
-    specifier: 0.1.2
-    version: 0.1.2(tailwindcss@3.3.3)
+    specifier: 0.1.3
+    version: 0.1.3(tailwindcss@3.3.3)
   '@jill64/typed-storage':
     specifier: 0.3.4
     version: 0.3.4
@@ -447,8 +447,8 @@ packages:
       tailwindcss: 3.3.3
     dev: true
 
-  /@jill64/tailwind-reactions@0.1.2(tailwindcss@3.3.3):
-    resolution: {integrity: sha512-mBrIyGrLryoFVLgLYGxsm6m7TooDG8Mzx824ymlRibd6cwEpb0NaXMA0OtKzDtELDvVRNti07yRHAMWS3xh+nQ==}
+  /@jill64/tailwind-reactions@0.1.3(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-CeUEcIg8QgKjPPpIf13Fnc4YxquIRicaWE9cxlMx0gbSAJeH38GYaKdiOegzFfiwwAWAqqxmvOefhVJadqcYwg==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
