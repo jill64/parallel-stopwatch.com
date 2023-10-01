@@ -5,7 +5,7 @@ import reactions from '@jill64/tailwind-grid-auto'
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {}
   },
-  plugins: [gridAuto, reactions],
+  plugins: [gridAuto, reactions]
 } satisfies Config
