@@ -18,8 +18,8 @@ devDependencies:
     specifier: 0.1.6
     version: 0.1.6(svelte@4.2.1)
   '@jill64/tailwind-grid-auto':
-    specifier: 1.0.5
-    version: 1.0.5(tailwindcss@3.3.3)
+    specifier: 1.0.6
+    version: 1.0.6(tailwindcss@3.3.3)
   '@jill64/tailwind-reactions':
     specifier: 0.1.5
     version: 0.1.5(tailwindcss@3.3.3)
@@ -439,8 +439,8 @@ packages:
       svelte-french-toast: 1.2.0(svelte@4.2.1)
     dev: true
 
-  /@jill64/tailwind-grid-auto@1.0.5(tailwindcss@3.3.3):
-    resolution: {integrity: sha512-D88NKgylVxFFn2goRdaZ+caySS6R2JbXxFadieEcMB3+NmRPyfDHeUnC+nXxNR8wSCGzK8TjuyMZFTvlcA9hDQ==}
+  /@jill64/tailwind-grid-auto@1.0.6(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-KybPXHbGdAwX4txAFjLvZm6bDSjMg1P4D9rocTwS3zWYnZBuj25ATbiC7knL3nJcwPbCjwumIJilDWikF7foAw==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
