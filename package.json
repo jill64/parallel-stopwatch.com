@@ -6,8 +6,8 @@
     "test": "vitest run --coverage",
     "test:e2e": "playwright test",
     "preview": "pnpm build && vite preview",
-    "format": "prettier --write . --plugin prettier-plugin-svelte .",
-    "lint": "prettier --check . --plugin prettier-plugin-svelte . && eslint .",
+    "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
+    "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && eslint .",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
