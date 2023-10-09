@@ -6,6 +6,8 @@ jobs:
   build:
     uses: jill64/workflows/.github/workflows/build.yml@main
     secrets: inherit
+    with:
+      build-command: export PUBLIC_SENTRY_DSN= && npm run build
   coverage:
     uses: jill64/workflows/.github/workflows/coverage.yml@main
     secrets: inherit
