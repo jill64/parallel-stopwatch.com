@@ -11,7 +11,7 @@
     "check": "svelte-kit sync && npx svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@jill64/downloads-local": "1.0.5",
+    "@jill64/downloads-local": "1.0.6",
     "@jill64/svelte-device-theme": "1.0.4",
     "@jill64/svelte-inline-modal": "1.0.4",
     "@jill64/svelte-toast": "0.1.10",
