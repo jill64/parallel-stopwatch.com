@@ -16,7 +16,7 @@
     "@jill64/svelte-device-theme": "1.0.9",
     "@jill64/svelte-toast": "0.1.17",
     "@jill64/tailwind-grid-auto": "1.0.13",
-    "@jill64/tailwind-reactions": "0.1.11",
+    "@jill64/tailwind-reactions": "0.1.13",
     "@jill64/typed-storage": "0.3.16",
     "@playwright/test": "1.38.1",
     "@sentry/svelte": "7.73.0",
