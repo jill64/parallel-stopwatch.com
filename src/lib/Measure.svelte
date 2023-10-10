@@ -1,6 +1,6 @@
 <script lang="ts">
   import { download } from '@jill64/downloads-local'
-  import { InlineModal } from '@jill64/svelte-inline-modal'
+  import { InlineModal } from 'svelte-inline-modal'
   import { unparse } from 'papaparse'
   import { slide } from 'svelte/transition'
   import { localAllTime } from './localAllTime'
