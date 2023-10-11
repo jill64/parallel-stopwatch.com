@@ -4,7 +4,7 @@ on:
   push:
     branches: main
 
-concurrency: pages
+concurrency: deploy
 
 jobs:
   deploy:
@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          PUBLIC_SENTRY_DSN: ${{ secrets.PUBLIC_SENTRY_DSN }}
+          PUBLIC_SENTRY_DSN: ${{ vers.PUBLIC_SENTRY_DSN }}
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3
