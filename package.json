@@ -14,7 +14,7 @@
     "@jill64/downloads-local": "1.0.9",
     "svelte-inline-modal": "0.0.13",
     "@jill64/svelte-device-theme": "1.0.10",
-    "@jill64/svelte-toast": "0.1.18",
+    "@jill64/svelte-toast": "0.1.20",
     "@jill64/tailwind-grid-auto": "1.0.13",
     "@jill64/tailwind-reactions": "0.1.13",
     "@jill64/typed-storage": "0.3.18",
