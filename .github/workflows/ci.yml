@@ -3,10 +3,6 @@ name: CI
 on: push
 
 jobs:
-  build:
-    uses: jill64/workflows/.github/workflows/build.yml@main
-    with:
-      build-command: export PUBLIC_SENTRY_DSN=${{ vars.PUBLIC_SENTRY_DSN }} && npm run build
   coverage:
     uses: jill64/workflows/.github/workflows/coverage.yml@main
   check:
