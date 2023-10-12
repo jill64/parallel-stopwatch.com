@@ -1,0 +1,8 @@
+branch-protection:
+  main:
+    required_status_checks:
+      contexts:
+        - check / check
+        - coverage / coverage
+        - integration / run-playwright
+        - Cloudflare Pages
