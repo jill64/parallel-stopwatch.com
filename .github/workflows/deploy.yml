@@ -4,38 +4,8 @@ on:
   push:
     branches: main
 
-concurrency: deploy
-
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3
-        with:
-          node-version: latest
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
-          run_install: true
-
-      - name: Build
-        run: npm run build
-        env:
-          PUBLIC_SENTRY_DSN: ${{ vers.PUBLIC_SENTRY_DSN }}
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3
-
-      - name: Upload Artifact
-        uses: actions/upload-pages-artifact@a753861a5debcf57bf8b404356158c8e1e33150c # v2
-        with:
-          path: ./build
-
-      - name: Deploy
-        uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5 # v2
+    uses: jill64/workflows/.github/workflows/publish-pages.yml@main
+    with:
+      build-command: export PUBLIC_SENTRY_DSN=${{ vars.PUBLIC_SENTRY_DSN }} && npm run build

@@ -5,14 +5,11 @@ on: push
 jobs:
   build:
     uses: jill64/workflows/.github/workflows/build.yml@main
-    secrets: inherit
     with:
-      build-command: export PUBLIC_SENTRY_DSN= && npm run build
+      build-command: export PUBLIC_SENTRY_DSN=${{ vars.PUBLIC_SENTRY_DSN }} && npm run build
   coverage:
     uses: jill64/workflows/.github/workflows/coverage.yml@main
-    secrets: inherit
   check:
     uses: jill64/workflows/.github/workflows/check.yml@main
-    secrets: inherit
     with:
-      check-command: export PUBLIC_SENTRY_DSN= && npm run check
+      check-command: export PUBLIC_SENTRY_DSN=${{ vars.PUBLIC_SENTRY_DSN }} && npm run check
