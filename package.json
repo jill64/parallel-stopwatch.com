@@ -8,7 +8,7 @@
     "preview": "pnpm build && vite preview",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint",
-    "check": "svelte-kit sync && npx svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-kit sync && npx svelte-check"
   },
   "devDependencies": {
     "@jill64/downloads-local": "1.0.8",
@@ -21,7 +21,6 @@
     "@playwright/test": "1.39.0",
     "@sentry/svelte": "7.73.0",
     "@sveltejs/adapter-cloudflare": "2.3.3",
-    "@sveltejs/adapter-static": "2.0.3",
     "@sveltejs/kit": "1.25.2",
     "@types/papaparse": "5.3.9",
     "@typescript-eslint/eslint-plugin": "6.7.5",

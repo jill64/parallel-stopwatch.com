@@ -1,16 +1,11 @@
-import adapter from '@sveltejs/adapter-static'
+import adapter from '@sveltejs/adapter-cloudflare'
 import { vitePreprocess } from '@sveltejs/kit/vite'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   preprocess: [vitePreprocess({})],
   kit: {
-    adapter: adapter({
-      fallback: 'index.html'
-    }),
-    paths: {
-      base: '/parallel-stopwatch'
-    },
+    adapter: adapter(),
     prerender: {
       entries: ['/', '/en', '/ja']
     }
