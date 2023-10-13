@@ -19,7 +19,7 @@
     "@jill64/tailwind-reactions": "0.1.14",
     "@jill64/typed-storage": "0.3.19",
     "@playwright/test": "1.39.0",
-    "@sentry/svelte": "7.73.0",
+    "@sentry/svelte": "7.74.0",
     "@sveltejs/adapter-cloudflare": "2.3.3",
     "@sveltejs/kit": "1.25.2",
     "@types/papaparse": "5.3.9",
