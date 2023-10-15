@@ -11,7 +11,7 @@
     "check": "export PUBLIC_SENTRY_DSN= && svelte-kit sync && npx svelte-check"
   },
   "devDependencies": {
-    "@jill64/downloads-local": "1.0.9",
+    "@jill64/downloads-local": "1.0.10",
     "svelte-inline-modal": "0.0.14",
     "@jill64/svelte-device-theme": "1.0.10",
     "@jill64/svelte-toast": "0.1.20",
