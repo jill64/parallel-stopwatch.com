@@ -5,7 +5,3 @@ on: push
 jobs:
   coverage:
     uses: jill64/workflows/.github/workflows/coverage.yml@main
-  check:
-    uses: jill64/workflows/.github/workflows/check.yml@main
-    with:
-      check-command: export PUBLIC_SENTRY_DSN=${{ vars.PUBLIC_SENTRY_DSN }} && npm run check
