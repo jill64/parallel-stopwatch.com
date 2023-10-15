@@ -5,7 +5,7 @@
     "build:pages": "vite build",
     "test": "vitest run --coverage",
     "test:e2e": "playwright test",
-    "preview": "pnpm build && vite preview",
+    "preview": "pnpm build:pages && vite preview",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint",
     "check": "export PUBLIC_SENTRY_DSN= && svelte-kit sync && npx svelte-check"
