@@ -21,7 +21,7 @@
     "@playwright/test": "1.39.0",
     "@sentry/svelte": "7.74.1",
     "@sveltejs/adapter-cloudflare": "2.3.3",
-    "@sveltejs/kit": "1.25.2",
+    "@sveltejs/kit": "1.26.0",
     "@types/papaparse": "5.3.10",
     "@typescript-eslint/eslint-plugin": "6.8.0",
     "@typescript-eslint/parser": "6.8.0",
