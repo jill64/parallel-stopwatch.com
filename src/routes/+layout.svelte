@@ -1,18 +1,11 @@
 <script lang="ts">
+  import { base } from '$app/paths'
   import { page } from '$app/stores'
-  import { PUBLIC_SENTRY_DSN } from '$env/static/public'
   import { locale, validated } from '$lib/enum/locale'
   import { translate } from '$lib/translate'
   import { isDark } from '@jill64/svelte-device-theme'
   import { Toaster } from '@jill64/svelte-toast'
-  import * as Sentry from '@sentry/svelte'
   import '../app.postcss'
-  import { base } from '$app/paths'
-
-  Sentry.init({
-    dsn: PUBLIC_SENTRY_DSN,
-    integrations: [new Sentry.BrowserTracing()]
-  })
 
   $: title = $translate({
     en: 'Parallel Stopwatch',
