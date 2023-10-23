@@ -33,7 +33,13 @@
     Stopwatch
   </title>
 </svelte:head>
-<h1 class="text-7xl sm:text-9xl flex justify-center m-10">
+<h1
+  class="text-7xl sm:text-9xl flex justify-center m-10"
+  aria-label={$translate({
+    en: 'Time',
+    ja: '時間'
+  })}
+>
   {makeTimeString(time)}
 </h1>
 <div class="flex justify-center items-center gap-4 text-6xl select-none">
@@ -170,6 +176,7 @@
         ✕
       </button>
       <input
+        title={record.name}
         bind:value={record.name}
         class="border-gray-500 focus-under bg-inherit text-2xl"
       />

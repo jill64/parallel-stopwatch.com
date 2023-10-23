@@ -7,3 +7,4 @@ node_modules
 package-lock.json
 pnpm-lock.yaml
 /test-results
+vite.config.ts.timestamp-*

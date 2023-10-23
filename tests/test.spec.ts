@@ -3,9 +3,9 @@ import { expect, test } from '@playwright/test'
 test('measuring', async ({ page }) => {
   await page.goto('/')
 
-  const timer = page.getByRole('heading', { name: '00:00.00' })
+  const timer = page.getByRole('heading', { name: 'Time' })
 
-  await expect(timer).toContainText('00:00.00')
+  await expect(timer).toHaveText('00:00.00')
 
   const startButton = page.getByTitle('Start')
 
@@ -33,27 +33,27 @@ test('measuring', async ({ page }) => {
 
   await resetButton.click()
 
-  await expect(timer).toContainText('00:00.00')
+  await expect(timer).toHaveText('00:00.00')
 
   await page.waitForTimeout(100)
 
-  await expect(timer).toContainText('00:00.00')
+  await expect(timer).toHaveText('00:00.00')
 
   await startButton.click()
 
   await page.waitForTimeout(100)
 
-  await expect(page.getByText('Record 1')).toBeVisible()
+  await expect(page.getByRole('textbox', { name: 'Record 1' })).toBeVisible()
 
   const addButton = page.getByTitle('Add a record')
 
   await addButton.click()
 
-  await expect(page.getByText('Record 2')).toBeVisible()
+  await expect(page.getByRole('textbox', { name: 'Record 2' })).toBeVisible()
 
   await addButton.click()
 
-  await expect(page.getByText('Record 3')).toBeVisible()
+  await expect(page.getByRole('textbox', { name: 'Record 3' })).toBeVisible()
 
   await page.getByTitle('Delete Record 2').click()
 
@@ -66,11 +66,13 @@ test('measuring', async ({ page }) => {
 test('export', async ({ page }) => {
   await page.goto('/')
 
-  await expect(page.getByRole('heading', { name: '00:00.00' })).toBeVisible()
+  const timer = page.getByRole('heading', { name: 'Time' })
+
+  await expect(timer).toHaveText('00:00.00')
 
   await page.getByRole('button', { name: 'Export as CSV' }).click()
 
-  await expect(page.getByTitle('File name')).toBeVisible()
+  await expect(page.getByRole('textbox', { name: 'File name' })).toBeVisible()
   await expect(
     page.getByRole('button', { name: 'Export', exact: true })
   ).toBeVisible()
