@@ -1,7 +1,7 @@
 <script lang="ts">
   import { download } from '@jill64/downloads-local'
-  import { InlineModal } from 'svelte-inline-modal'
   import { unparse } from 'papaparse'
+  import { InlineModal } from 'svelte-inline-modal'
   import { slide } from 'svelte/transition'
   import { localAllTime } from './localAllTime'
   import { localRecords } from './localRecords'
@@ -45,6 +45,10 @@
         diffTime = 0
         counting = false
       }}
+      title={$translate({
+        en: 'Stop',
+        ja: 'ストップ'
+      })}
     >
       □
     </button>
@@ -55,6 +59,10 @@
         counting = true
         started = true
       }}
+      title={$translate({
+        en: 'Start',
+        ja: 'スタート'
+      })}
     >
       ▷
     </button>
@@ -66,6 +74,10 @@
           records = records.map((x) => ({ ...x, laps: [] }))
           counting = false
         }}
+        title={$translate({
+          en: 'Reset',
+          ja: 'リセット'
+        })}
       >
         ↺
       </button>
@@ -95,6 +107,10 @@
       <div>
         <input
           bind:this={input}
+          title={$translate({
+            en: 'File name',
+            ja: 'ファイル名'
+          })}
           value="records-{new Date().toISOString().slice(0, 10)}"
           class="w-[50vw] bg-inherit sm:w-96 focus-under border-gray-500 text-2xl"
         />
@@ -146,6 +162,10 @@
           records = [...records.slice(0, index), ...records.slice(index + 1)]
           localRecords.set(records)
         }}
+        title={$translate({
+          en: `Delete ${record.name}`,
+          ja: `${record.name} を削除`
+        })}
       >
         ✕
       </button>
@@ -161,6 +181,10 @@
               record.laps = [...record.laps, time]
               localRecords.set(records)
             }}
+            title={$translate({
+              en: `Add a lap to ${record.name}`,
+              ja: `${record.name} にラップを追加`
+            })}
           >
             🏳
           </button>
@@ -190,6 +214,10 @@
       ]
       localRecords.set(records)
     }}
+    title={$translate({
+      en: 'Add a record',
+      ja: '記録を追加'
+    })}
   >
     +
   </button>
