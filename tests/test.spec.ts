@@ -68,8 +68,10 @@ test('export', async ({ page }) => {
 
   await expect(page.getByRole('heading', { name: '00:00.00' })).toBeVisible()
 
-  await page.getByTitle('Export as CSV').click()
+  await page.getByRole('button', { name: 'Export as CSV' }).click()
 
   await expect(page.getByTitle('File name')).toBeVisible()
-  await expect(page.getByTitle('Export')).toBeVisible()
+  await expect(
+    page.getByRole('button', { name: 'Export', exact: true })
+  ).toBeVisible()
 })
