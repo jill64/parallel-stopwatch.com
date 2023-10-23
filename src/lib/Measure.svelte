@@ -37,7 +37,7 @@
   class="text-7xl sm:text-9xl flex justify-center m-10"
   aria-label={$translate({
     en: 'Time',
-    ja: '時間'
+    ja: 'タイム'
   })}
 >
   {makeTimeString(time)}
