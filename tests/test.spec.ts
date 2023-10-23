@@ -70,6 +70,6 @@ test('export', async ({ page }) => {
 
   await page.getByTitle('Export as CSV').click()
 
-  await expect(page.getByTitle('File name' )).toBeVisible()
-  await expect(page.getByTitle('Export' )).toBeVisible()
+  await expect(page.getByTitle('File name')).toBeVisible()
+  await expect(page.getByTitle('Export')).toBeVisible()
 })
