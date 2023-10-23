@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { makeTimeString } from '../src/lib/makeTimeString'
+import { makeTimeString } from './makeTimeString'
 
 test('default', () => {
   expect(makeTimeString(0)).toBe('00:00.00')
