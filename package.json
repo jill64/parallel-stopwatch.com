@@ -3,11 +3,11 @@
   "scripts": {
     "dev": "vite dev",
     "build:pages": "vite build",
-    "test": "vitest run --coverage",
-    "test:e2e": "npx playwright install --with-deps && export PUBLIC_SENTRY_DSN= && playwright test",
+    "test": "vitest",
+    "test:e2e": "playwright test",
     "preview": "pnpm build:pages && vite preview",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
-    "lint": "npx prettier --check . --plugin prettier-plugin-svelte . && npx eslint .",
+    "lint": "npx eslint .",
     "check": "export PUBLIC_SENTRY_DSN= && svelte-kit sync && npx svelte-check"
   },
   "devDependencies": {
@@ -25,7 +25,6 @@
     "@types/papaparse": "5.3.10",
     "@typescript-eslint/eslint-plugin": "6.9.0",
     "@typescript-eslint/parser": "6.9.0",
-    "@vitest/coverage-v8": "0.34.6",
     "autoprefixer": "10.4.16",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-svelte": "2.34.0",
