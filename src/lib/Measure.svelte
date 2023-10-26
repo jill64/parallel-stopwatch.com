@@ -1,6 +1,14 @@
 <script lang="ts">
   import { download } from '@jill64/downloads-local'
   import { unparse } from 'papaparse'
+  import {
+    FlagIcon,
+    PlayIcon,
+    PlusIcon,
+    RotateCcwIcon,
+    SquareIcon,
+    XIcon
+  } from 'svelte-feather-icons'
   import { InlineModal } from 'svelte-inline-modal'
   import { slide } from 'svelte/transition'
   import { localAllTime } from './localAllTime'
@@ -42,9 +50,10 @@
 >
   {makeTimeString(time)}
 </h1>
-<div class="flex justify-center items-center gap-4 text-6xl select-none">
+<div class="flex justify-center items-center gap-4">
   {#if counting}
     <button
+      class="rounded-full p-4 push-effect dark:pop-effect"
       on:click={() => {
         allTime += now() - startTime
         localAllTime.set(allTime)
@@ -56,10 +65,11 @@
         ja: 'ストップ'
       })}
     >
-      □
+      <SquareIcon size="48" />
     </button>
   {:else}
     <button
+      class="rounded-full p-4 push-effect dark:pop-effect"
       on:click={() => {
         startTime = now()
         counting = true
@@ -70,10 +80,11 @@
         ja: 'スタート'
       })}
     >
-      ▷
+      <PlayIcon size="48" />
     </button>
     {#if time}
       <button
+        class="rounded-full p-4 push-effect dark:pop-effect"
         on:click={() => {
           allTime = 0
           localAllTime.set(0)
@@ -85,7 +96,7 @@
           ja: 'リセット'
         })}
       >
-        ↺
+        <RotateCcwIcon size="48" />
       </button>
     {/if}
   {/if}
@@ -163,7 +174,7 @@
     {@const laps = record.laps}
     <div class="flex items-center gap-4" transition:slide>
       <button
-        class="text-xl w-7 h-7 rounded-full push-effect dark:pop-effect select-none"
+        class="rounded-full p-2 push-effect dark:pop-effect"
         on:click={() => {
           records = [...records.slice(0, index), ...records.slice(index + 1)]
           localRecords.set(records)
@@ -173,17 +184,17 @@
           ja: `${record.name} を削除`
         })}
       >
-        ✕
+        <XIcon size="16" />
       </button>
       <input
         title={record.name}
         bind:value={record.name}
         class="border-gray-500 focus-under bg-inherit text-2xl"
       />
-      <span class="w-10 h-10">
+      <span class="w-10 h-10 flex items-center justify-center">
         {#if counting}
           <button
-            class="text-3xl select-none"
+            class="rounded-full p-3 push-effect dark:pop-effect"
             on:click={() => {
               record.laps = [...record.laps, time]
               localRecords.set(records)
@@ -193,7 +204,7 @@
               ja: `${record.name} にラップを追加`
             })}
           >
-            🏳
+            <FlagIcon size="28" />
           </button>
         {/if}
       </span>
@@ -209,7 +220,7 @@
     </div>
   {/each}
   <button
-    class="text-5xl w-14 h-14 rounded-full select-none push-effect dark:pop-effect"
+    class="rounded-full p-3 push-effect dark:pop-effect"
     on:click={() => {
       records = [
         ...records,
@@ -226,6 +237,6 @@
       ja: '記録を追加'
     })}
   >
-    +
+    <PlusIcon size="32" />
   </button>
 </div>
