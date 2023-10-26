@@ -1,7 +1,7 @@
 extends:
-  - 'eslint:recommended'
-  - 'plugin:@typescript-eslint/recommended'
-  - 'plugin:svelte/recommended'
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:svelte/recommended
   - prettier
 parserOptions:
   ecmaVersion: 2020
