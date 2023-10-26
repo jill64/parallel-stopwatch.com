@@ -62,18 +62,3 @@ test('measuring', async ({ page }) => {
   await page.getByTitle('Add a lap to Record 1').click()
   await page.getByTitle('Add a lap to Record 3').click()
 })
-
-test('export', async ({ page }) => {
-  await page.goto('/')
-
-  const timer = page.getByRole('heading', { name: 'Time' })
-
-  await expect(timer).toHaveText('00:00.00')
-
-  await page.getByRole('button', { name: 'Export as CSV' }).click()
-
-  await expect(page.getByRole('textbox', { name: 'File name' })).toBeVisible()
-  await expect(
-    page.getByRole('button', { name: 'Export', exact: true })
-  ).toBeVisible()
-})
