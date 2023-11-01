@@ -4,7 +4,4 @@ import { PUBLIC_SENTRY_DSN } from '$env/static/public'
 const { onHandle, onError } = serverInit(PUBLIC_SENTRY_DSN)
 
 export const handle = onHandle()
-
-export const handleError = onError((e) => {
-  console.error(e)
-})
+export const handleError = onError()
