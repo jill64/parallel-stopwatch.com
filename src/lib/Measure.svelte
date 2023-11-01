@@ -16,7 +16,7 @@
   import { makeID } from './makeID'
   import { makeTimeString } from './makeTimeString'
   import { now } from './now'
-  import { translate } from './translate'
+  import { translate } from './i18n'
 
   let input: HTMLInputElement | undefined
   let startTime = 0

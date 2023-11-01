@@ -1,1 +1,1 @@
-export { match } from '$lib/enum/locale'
+export { match } from '$lib/i18n'
