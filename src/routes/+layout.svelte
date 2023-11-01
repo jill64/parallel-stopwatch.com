@@ -3,7 +3,7 @@
   import { page } from '$app/stores'
   import { translate } from '$lib/i18n'
   import { isDark } from '@jill64/svelte-device-theme'
-  import { LocaleAlternates } from '@jill64/svelte-i18n'
+  import { LocaleAlternates, LanguageManager } from '@jill64/svelte-i18n'
   import { Toaster } from '@jill64/svelte-toast'
   import '../app.postcss'
 
@@ -25,6 +25,7 @@
 </script>
 
 <Toaster position="bottom-right" />
+<LanguageManager />
 <LocaleAlternates xDefaultHref={origin} />
 <svelte:head>
   <link rel="icon" href="{base}/favicon{suffix}.png" />
