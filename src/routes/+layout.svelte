@@ -19,15 +19,11 @@
   })
 
   $: suffix = $isDark ? '-dark' : ''
-
-  $: ({
-    url: { href, origin }
-  } = $page)
 </script>
 
 <Toaster position="bottom-right" />
 <LanguageManager />
-<LocaleAlternates xDefaultHref={origin} />
+<LocaleAlternates xDefaultHref={$page.url.origin} />
 <OGP
   {title}
   {description}
