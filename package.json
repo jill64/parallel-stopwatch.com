@@ -2,13 +2,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build:pages": "vite build",
+    "build": "vite build",
     "test": "vitest",
     "test:e2e": "playwright test",
-    "preview": "pnpm build:pages && vite preview",
+    "preview": "npm run build && vite preview",
     "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
     "lint": "npx eslint . && npm run check",
-    "check": "export PUBLIC_SENTRY_DSN= && svelte-kit sync && npx svelte-check"
+    "check": "svelte-kit sync && npx svelte-check"
   },
   "devDependencies": {
     "@jill64/downloads-local": "1.1.0",
