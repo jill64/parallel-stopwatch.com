@@ -30,7 +30,7 @@
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-deprecation": "2.0.0",
     "eslint-plugin-svelte": "2.34.1",
-    "nanoid": "5.0.2",
+    "nanoid": "5.0.3",
     "papaparse": "5.4.1",
     "postcss": "8.4.31",
     "postcss-load-config": "4.0.1",
