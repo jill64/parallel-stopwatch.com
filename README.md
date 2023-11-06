@@ -10,7 +10,7 @@
 
 # Parallel Stopwatch
 
-[![ci.yml](https://github.com/jill64/parallel-stopwatch/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/parallel-stopwatch/actions/workflows/ci.yml) [![codecov-coverage](https://codecov.io/gh/jill64/parallel-stopwatch/graph/badge.svg)](https://codecov.io/gh/jill64/parallel-stopwatch)
+[![ci.yml](https://github.com/jill64/parallel-stopwatch/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/parallel-stopwatch/actions/workflows/ci.yml)
 
 🕓 Simultaneously start any number of stopwatches and record them individually
 
