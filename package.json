@@ -14,7 +14,7 @@
     "@jill64/downloads-local": "1.1.0",
     "@jill64/sentry-sveltekit-cloudflare": "1.0.0",
     "@jill64/svelte-device-theme": "1.2.0",
-    "@jill64/svelte-i18n": "0.2.5",
+    "@jill64/svelte-i18n": "0.2.6",
     "@jill64/svelte-ogp": "0.0.4",
     "@jill64/svelte-toast": "1.0.2",
     "@jill64/tailwind-grid-auto": "1.1.1",
