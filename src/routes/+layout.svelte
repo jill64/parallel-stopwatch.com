@@ -1,6 +1,7 @@
 <script lang="ts">
   import { base } from '$app/paths'
   import { page } from '$app/stores'
+  import Measure from '$lib/Measure.svelte'
   import { translate } from '$lib/i18n'
   import { isDark } from '@jill64/svelte-device-theme'
   import { LanguageManager, LocaleAlternates } from '@jill64/svelte-i18n'
@@ -36,4 +37,5 @@
   <link rel="apple-touch-icon" href="{base}/apple-touch-icon{suffix}.png" />
   <meta name="description" content={description} />
 </svelte:head>
-<slot />
+
+<Measure />
