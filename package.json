@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@jill64/downloads-local": "1.1.0",
-    "@jill64/sentry-sveltekit-cloudflare": "1.0.0",
+    "@jill64/sentry-sveltekit-cloudflare": "1.2.0",
     "@jill64/svelte-device-theme": "1.2.0",
     "@jill64/svelte-i18n": "0.2.6",
     "@jill64/svelte-ogp": "0.1.0",
