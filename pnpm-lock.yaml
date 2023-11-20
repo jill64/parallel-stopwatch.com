@@ -21,8 +21,8 @@ devDependencies:
     specifier: 0.1.0
     version: 0.1.0(@sveltejs/kit@1.27.6)(svelte@4.2.7)
   '@jill64/svelte-toast':
-    specifier: 1.0.6
-    version: 1.0.6(svelte@4.2.7)
+    specifier: 1.1.0
+    version: 1.1.0(svelte@4.2.7)
   '@jill64/tailwind-grid-auto':
     specifier: 1.2.0
     version: 1.2.0(tailwindcss@3.3.5)
@@ -843,10 +843,10 @@ packages:
       svelte: 4.2.7
     dev: true
 
-  /@jill64/svelte-toast@1.0.6(svelte@4.2.7):
+  /@jill64/svelte-toast@1.1.0(svelte@4.2.7):
     resolution:
       {
-        integrity: sha512-MFNWTEzGhfNC1ZbMXh/10ULmCJBqdRGy7fTPRuB4uhRA59kmRivmg8dGJ/bjMQUmHyuqx7aIFBWegNjIhkhTOA==
+        integrity: sha512-HHVtmq0BdpDJOp5pD5r2Nh5szNWhCCayCbLzkUxgxuBu+9Y7aZDS1+7ZYBC79Yi5Vs5S8MyHcEegwqzHVh0bMQ==
       }
     peerDependencies:
       svelte: ^4.0.0
