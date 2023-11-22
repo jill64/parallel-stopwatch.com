@@ -42,8 +42,8 @@ devDependencies:
     specifier: 1.27.6
     version: 1.27.6(svelte@4.2.7)(vite@5.0.2)
   '@types/papaparse':
-    specifier: 5.3.12
-    version: 5.3.12
+    specifier: 5.3.13
+    version: 5.3.13
   '@typescript-eslint/eslint-plugin':
     specifier: 6.12.0
     version: 6.12.0(@typescript-eslint/parser@6.12.0)(eslint@8.53.0)(typescript@5.3.2)
@@ -1306,10 +1306,10 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/papaparse@5.3.12:
+  /@types/papaparse@5.3.13:
     resolution:
       {
-        integrity: sha512-b6tFvGgpY6zUjflrhhyFjNCN/okylDH/DKqAuYX2xqzK004H4CoEvnFyfT0ijiC/9h+dCUQYWS1Vl1mliLuMJA==
+        integrity: sha512-tYSlZI3tIdBHXea8fZHcmwbsd1mSUikdMUyqpqj0Zzfu2GTGUSHEKmcnBg699WJ8UnxG31rXD4b1mLGPOAxS2w==
       }
     dependencies:
       '@types/node': 20.9.0
