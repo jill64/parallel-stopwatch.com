@@ -75,8 +75,8 @@ devDependencies:
     specifier: 4.0.2
     version: 4.0.2(postcss@8.4.31)
   prettier-plugin-svelte:
-    specifier: 3.1.1
-    version: 3.1.1(prettier@3.1.0)(svelte@4.2.7)
+    specifier: 3.1.2
+    version: 3.1.2(prettier@3.1.0)(svelte@4.2.7)
   svelte:
     specifier: 4.2.7
     version: 4.2.7
@@ -3410,10 +3410,10 @@ packages:
     engines: { node: '>= 0.8.0' }
     dev: true
 
-  /prettier-plugin-svelte@3.1.1(prettier@3.1.0)(svelte@4.2.7):
+  /prettier-plugin-svelte@3.1.2(prettier@3.1.0)(svelte@4.2.7):
     resolution:
       {
-        integrity: sha512-jLzaHfToav527/I5h2BMQfN3G5gylrJm54zFFyoXvUtfscI47877ftacUb+Eyse/3bXrhY+MtkyiuvruiHc+kg==
+        integrity: sha512-7xfMZtwgAWHMT0iZc8jN4o65zgbAQ3+O32V6W7pXrqNvKnHnkoyQCGCbKeUyXKZLbYE0YhFRnamfxfkEGxm8qA==
       }
     peerDependencies:
       prettier: ^3.0.0

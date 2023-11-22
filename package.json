@@ -34,7 +34,7 @@
     "papaparse": "5.4.1",
     "postcss": "8.4.31",
     "postcss-load-config": "4.0.2",
-    "prettier-plugin-svelte": "3.1.1",
+    "prettier-plugin-svelte": "3.1.2",
     "svelte": "4.2.7",
     "svelte-feather-icons": "4.0.1",
     "svelte-inline-modal": "1.0.0",
