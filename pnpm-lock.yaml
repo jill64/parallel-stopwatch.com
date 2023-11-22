@@ -21,8 +21,8 @@ devDependencies:
     specifier: 0.1.0
     version: 0.1.0(@sveltejs/kit@1.27.6)(svelte@4.2.7)
   '@jill64/svelte-toast':
-    specifier: 1.1.0
-    version: 1.1.0(svelte@4.2.7)
+    specifier: 1.2.0
+    version: 1.2.0(svelte@4.2.7)
   '@jill64/tailwind-grid-auto':
     specifier: 1.2.0
     version: 1.2.0(tailwindcss@3.3.5)
@@ -790,18 +790,6 @@ packages:
       toucan-js: 3.3.1
     dev: true
 
-  /@jill64/svelte-device-theme@1.2.0(svelte@4.2.7):
-    resolution:
-      {
-        integrity: sha512-FiAwDd/LpXXXmD0936mOyvweyDqn5umZqAmgWtu5h8y1QY2w90dt/yqdZmiohvp+bDrNcXGnyy+Du9tnUo0ryQ==
-      }
-    peerDependencies:
-      svelte: ^4.0.0
-    dependencies:
-      esm-env: 1.0.0
-      svelte: 4.2.7
-    dev: true
-
   /@jill64/svelte-device-theme@1.2.1(svelte@4.2.7):
     resolution:
       {
@@ -855,17 +843,18 @@ packages:
       svelte: 4.2.7
     dev: true
 
-  /@jill64/svelte-toast@1.1.0(svelte@4.2.7):
+  /@jill64/svelte-toast@1.2.0(svelte@4.2.7):
     resolution:
       {
-        integrity: sha512-HHVtmq0BdpDJOp5pD5r2Nh5szNWhCCayCbLzkUxgxuBu+9Y7aZDS1+7ZYBC79Yi5Vs5S8MyHcEegwqzHVh0bMQ==
+        integrity: sha512-8Zv6jIgB0ry6tDFvpucNDA/clgIDDbsqQIPpLSuNkvyewiQDqeOaAJ0oMbTZgQf1WYQhswTBn0y97nmdj/fFQg==
       }
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      '@jill64/svelte-device-theme': 1.2.0(svelte@4.2.7)
+      '@jill64/svelte-device-theme': 1.2.1(svelte@4.2.7)
       svelte: 4.2.7
       svelte-french-toast: 1.2.0(svelte@4.2.7)
+      svelte-mq-store: 0.0.1(svelte@4.2.7)
     dev: true
 
   /@jill64/tailwind-grid-auto@1.2.0(tailwindcss@3.3.5):
