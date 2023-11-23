@@ -84,8 +84,8 @@ devDependencies:
     specifier: 4.0.1
     version: 4.0.1
   svelte-inline-modal:
-    specifier: 1.0.0
-    version: 1.0.0(svelte@4.2.7)
+    specifier: 1.1.0
+    version: 1.1.0(svelte@4.2.7)
   tailwindcss:
     specifier: 3.3.5
     version: 3.3.5
@@ -3773,10 +3773,10 @@ packages:
       svelte: 4.2.7
     dev: true
 
-  /svelte-inline-modal@1.0.0(svelte@4.2.7):
+  /svelte-inline-modal@1.1.0(svelte@4.2.7):
     resolution:
       {
-        integrity: sha512-ueVxs3ejcdg9icKi8wlLmm4F6VfyuEfVrEWVVcUuHd1kzqlYlqKJdJC/NJ0HsRh6A2JwdmQFctmp/L+PlINObA==
+        integrity: sha512-suG03mNM+nOyr9H4tGg/CMKObHnhMAXhcZ0/PJtqlGdJ0IZvxNA4bCRhlEn4UXjZxYNcfQ73eKq1tQ9v986ClQ==
       }
     peerDependencies:
       svelte: ^4.0.0
