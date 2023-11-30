@@ -1,10 +1,4 @@
-import { typedStorage } from '@jill64/typed-storage'
+import { storage } from '@jill64/svelte-storage'
+import { integer } from '@jill64/svelte-storage/serde'
 
-export const localAllTime = typedStorage('allTime', {
-  guard: (x): x is number => typeof x === 'number',
-  defaultValue: 0,
-  serializer: {
-    parse: (x) => parseInt(x),
-    stringify: (x) => x.toString()
-  }
-})
+export const localAllTime = storage('allTime', integer)

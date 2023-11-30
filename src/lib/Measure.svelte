@@ -21,9 +21,9 @@
   let input: HTMLInputElement | undefined
   let startTime = 0
   let diffTime = 0
-  let allTime = localAllTime.get()
+  let allTime = $localAllTime
   let counting = false
-  let records = localRecords.get()
+  let records = $localRecords
   let started = false
 
   $: time = allTime + diffTime
