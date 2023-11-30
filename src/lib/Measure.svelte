@@ -1,5 +1,6 @@
 <script lang="ts">
   import { download } from '@jill64/downloads-local'
+  import { FlipButton } from '@jill64/svelte-dark-theme'
   import { unparse } from 'papaparse'
   import {
     FlagIcon,
@@ -11,12 +12,12 @@
   } from 'svelte-feather-icons'
   import { InlineModal } from 'svelte-inline-modal'
   import { slide } from 'svelte/transition'
+  import { translate } from './i18n'
   import { localAllTime } from './localAllTime'
   import { localRecords } from './localRecords'
   import { makeID } from './makeID'
   import { makeTimeString } from './makeTimeString'
   import { now } from './now'
-  import { translate } from './i18n'
 
   let input: HTMLInputElement | undefined
   let startTime = 0
@@ -41,6 +42,11 @@
     Stopwatch
   </title>
 </svelte:head>
+
+<header class="fixed top-1 right-1">
+  <FlipButton />
+</header>
+
 <h1
   class="text-7xl sm:text-9xl flex justify-center m-10"
   aria-label={$translate({

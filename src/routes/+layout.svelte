@@ -3,7 +3,7 @@
   import { page } from '$app/stores'
   import Measure from '$lib/Measure.svelte'
   import { translate } from '$lib/i18n'
-  import { isDark } from '@jill64/svelte-device-theme'
+  import { ThemeManager, theme } from '@jill64/svelte-dark-theme'
   import { LanguageManager, LocaleAlternates } from '@jill64/svelte-i18n'
   import { OGP } from '@jill64/svelte-ogp'
   import { Toaster } from '@jill64/svelte-toast'
@@ -19,11 +19,12 @@
     ja: '複数のストップウォッチを同時にスタートさせ、個別に記録します。\n結果はcsvファイルで出力することができます。'
   })
 
-  $: suffix = $isDark ? '-dark' : ''
+  $: suffix = $theme === 'dark' ? '-dark' : ''
 </script>
 
 <Toaster position="bottom-right" />
 <LanguageManager />
+<ThemeManager />
 <LocaleAlternates xDefaultHref={$page.url.origin} />
 <OGP
   {title}
