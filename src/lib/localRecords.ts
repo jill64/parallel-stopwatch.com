@@ -1,4 +1,5 @@
-import { typedStorage } from '@jill64/typed-storage'
+import { storage } from '@jill64/svelte-storage'
+import { json } from '@jill64/svelte-storage/serde'
 import { array, number, scanner, string } from 'typescanner'
 import { makeID } from './makeID'
 import type { RecordData } from './type/RecordData'
@@ -9,7 +10,10 @@ const isRecordData = scanner<RecordData>({
   laps: array(number)
 })
 
-export const localRecords = typedStorage('records', {
-  guard: (x): x is RecordData[] => Array.isArray(x) && x.every(isRecordData),
-  defaultValue: [{ id: makeID(), name: 'Record 1', laps: [] }]
-})
+export const localRecords = storage(
+  'records',
+  json(
+    (x): x is RecordData[] => Array.isArray(x) && x.every(isRecordData),
+    [{ id: makeID(), name: 'Record 1', laps: [] }]
+  )
+)
