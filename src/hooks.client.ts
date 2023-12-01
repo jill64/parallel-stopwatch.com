@@ -1,5 +1,5 @@
 import { clientInit } from '@jill64/sentry-sveltekit-cloudflare'
-import { toast } from '@jill64/svelte-toast'
+import { toast } from '@jill64/svelte-suite'
 import { get } from 'svelte/store'
 
 const onError = clientInit(

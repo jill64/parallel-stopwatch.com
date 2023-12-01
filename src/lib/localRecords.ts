@@ -1,5 +1,5 @@
-import { storage } from '@jill64/svelte-storage'
-import { json } from '@jill64/svelte-storage/serde'
+import { storage } from '@jill64/svelte-suite'
+import { json } from '@jill64/svelte-suite/serde'
 import { array, number, scanner, string } from 'typescanner'
 import { makeID } from './makeID'
 import type { RecordData } from './type/RecordData'
