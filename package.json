@@ -33,7 +33,7 @@
     "nanoid": "5.0.3",
     "papaparse": "5.4.1",
     "postcss": "8.4.31",
-    "postcss-load-config": "4.0.2",
+    "postcss-load-config": "5.0.0",
     "prettier-plugin-svelte": "3.1.2",
     "svelte": "4.2.8",
     "svelte-feather-icons": "4.0.1",
