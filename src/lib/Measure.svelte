@@ -1,6 +1,6 @@
 <script lang="ts">
   import { download } from '@jill64/downloads-local'
-  import { FlipButton } from '@jill64/svelte-dark-theme'
+  import { FlipButton, InlineModal } from '@jill64/svelte-suite'
   import { unparse } from 'papaparse'
   import {
     FlagIcon,
@@ -9,8 +9,7 @@
     RotateCcwIcon,
     SquareIcon,
     XIcon
-  } from 'svelte-feather-icons'
-  import { InlineModal } from 'svelte-inline-modal'
+  } from '@jill64/svelte-suite/icons'
   import { slide } from 'svelte/transition'
   import { translate } from './i18n'
   import { localAllTime } from './localAllTime'
