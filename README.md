@@ -10,7 +10,7 @@
 
 # parallel-stopwatch
 
-[![ci.yml](https://github.com/jill64/parallel-stopwatch/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/parallel-stopwatch/actions/workflows/ci.yml) [![website](https://img.shields.io/website?up_message=working&down_message=down&url=https%3A%2F%2Fparallel-stopwatch.com)](https://parallel-stopwatch.com)
+<!----- BEGIN GHOST DOCS BADGES -----><a href="https://github.com/jill64/parallel-stopwatch/actions/workflows/ci.yml"><img src="https://github.com/jill64/parallel-stopwatch/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a> <a href="https://parallel-stopwatch.com"><img src="https://img.shields.io/website?up_message=working&down_message=down&url=https%3A%2F%2Fparallel-stopwatch.com" alt="website" /></a><!----- END GHOST DOCS BADGES ----->
 
 🕓 Simultaneously start any number of stopwatches and record them individually
 
