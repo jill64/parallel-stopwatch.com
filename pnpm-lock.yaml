@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.5.0
     version: 1.5.0(@sveltejs/kit@1.29.1)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 1.0.6
-    version: 1.0.6(@sveltejs/kit@1.29.1)(svelte@4.2.8)
+    specifier: 1.0.7
+    version: 1.0.7(@sveltejs/kit@1.29.1)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 1.0.0
     version: 1.0.0
@@ -719,8 +719,8 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@1.0.6(@sveltejs/kit@1.29.1)(svelte@4.2.8):
-    resolution: {integrity: sha512-OwpclqJiiO54BdqPnz/TieIi6WQ0bKXXZ4wVOah8zXO0OthPvjY3KxN/V0xDBdmVVxABwS0RHF49OMFCchEaMQ==}
+  /@jill64/svelte-suite@1.0.7(@sveltejs/kit@1.29.1)(svelte@4.2.8):
+    resolution: {integrity: sha512-2qMAdyxv/3lC/jG4EqaPopNVCXxGrC2ouXrO4H1HPwePOGqqH+TiO98a+n9Tv9R6ytZzviKZr7kiYnf539sqOA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
@@ -734,7 +734,7 @@ packages:
       svelte: 4.2.8
       svelte-feather-icons: 4.0.1
       svelte-inline-modal: 1.1.0(svelte@4.2.8)
-      svelte-qparam: 0.2.1(@sveltejs/kit@1.29.1)(svelte@4.2.8)
+      svelte-qparam: 0.3.0(@sveltejs/kit@1.29.1)(svelte@4.2.8)
       ts-serde: 1.0.0
     transitivePeerDependencies:
       - '@sveltejs/kit'
@@ -3514,8 +3514,8 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /svelte-qparam@0.2.1(@sveltejs/kit@1.29.1)(svelte@4.2.8):
-    resolution: {integrity: sha512-SaHkxFtDWkpbXdvoFsVldFla9Zi8M9UFvaWtcyq1wMWSvykeEvfFrpNT4qsmaDw5H9ax28R04UiZ4H7LTWMdkQ==}
+  /svelte-qparam@0.3.0(@sveltejs/kit@1.29.1)(svelte@4.2.8):
+    resolution: {integrity: sha512-SYmG2d4yl3vpYQhB4JFmRZB50LtsjND6yhZjdMEBRzOIWi4PsXgBa4QVqLcSCcMptRL3FcPmnhrPp3c+5SImFQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^4.0.0
