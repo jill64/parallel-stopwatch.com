@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.5.0
     version: 1.5.0(@sveltejs/kit@1.30.1)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 1.0.8
-    version: 1.0.8(@sveltejs/kit@1.30.1)(svelte@4.2.8)
+    specifier: 1.0.10
+    version: 1.0.10(@sveltejs/kit@1.30.1)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 1.0.0
     version: 1.0.0
@@ -689,16 +689,16 @@ packages:
       svelte-loading-spinners: 0.3.4
     dev: true
 
-  /@jill64/svelte-menu@0.1.0(svelte@4.2.8):
-    resolution: {integrity: sha512-DeqMACJ5w7fYtIknavm+JbUsBQcGNLg0v07uQqAVpmBZ0LZxvbJtZvcdX97CqSvnXMuFb4lWL7JWEuHreEi67Q==}
+  /@jill64/svelte-menu@1.0.0(svelte@4.2.8):
+    resolution: {integrity: sha512-CvpXxzMh2z0MlTQiNB9G3MTViXR3YCrMpN/2LEYmgfu7qwsqpyNmO693Y79WutyTSJNmbtRY0aBR+HbRXddHZA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-ogp@0.1.0(@sveltejs/kit@1.30.1)(svelte@4.2.8):
-    resolution: {integrity: sha512-6cI/U+r9zNG8CD04/06FwisO4nDCnqSF40kTS1fQWCCe5v+2qliKi6jgiwe/ZRM6U+0cSsKQjMBcZbIgX9j7UQ==}
+  /@jill64/svelte-ogp@1.0.0(@sveltejs/kit@1.30.1)(svelte@4.2.8):
+    resolution: {integrity: sha512-pp+OUX5qYd3CjVHrkiWT0MqXT55Pnui92TaSuSu9oV02D+k6xpWePwmcmBxTMeIupPF41eyXXpfaCOlJay8tNQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^4.0.0
@@ -719,16 +719,16 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@1.0.8(@sveltejs/kit@1.30.1)(svelte@4.2.8):
-    resolution: {integrity: sha512-eKxzXfuKJgqWv2GMNpoPdT0Z7NGYr7Rxj1Boy07qQ99tGmLKRykp5zRvUH2MVoCHtD3uOUSwLVjekuVZ7DlTHQ==}
+  /@jill64/svelte-suite@1.0.10(@sveltejs/kit@1.30.1)(svelte@4.2.8):
+    resolution: {integrity: sha512-xH1trQWfXCM9FxBu0ERwKzUp//82lPqwcsagU5J14cNBVi1BlyKQEfKz9HWXwEszdHDkzEuecyg97YpGDfcIPg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
       '@jill64/svelte-dark-theme': 2.2.15(@sveltejs/kit@1.30.1)(svelte@4.2.8)
       '@jill64/svelte-i18n': 0.2.6(@sveltejs/kit@1.30.1)(svelte@4.2.8)
       '@jill64/svelte-input': 1.6.0(svelte@4.2.8)
-      '@jill64/svelte-menu': 0.1.0(svelte@4.2.8)
-      '@jill64/svelte-ogp': 0.1.0(@sveltejs/kit@1.30.1)(svelte@4.2.8)
+      '@jill64/svelte-menu': 1.0.0(svelte@4.2.8)
+      '@jill64/svelte-ogp': 1.0.0(@sveltejs/kit@1.30.1)(svelte@4.2.8)
       '@jill64/svelte-storage': 1.0.1(@sveltejs/kit@1.30.1)(svelte@4.2.8)
       '@jill64/svelte-toast': 1.2.5(svelte@4.2.8)
       svelte: 4.2.8
