@@ -13,6 +13,8 @@
   } from '@jill64/svelte-suite'
   import '../app.postcss'
 
+  export let data
+
   $: title = $translate({
     en: 'Parallel Stopwatch',
     ja: 'パラレルストップウォッチ'
@@ -43,4 +45,4 @@
   <meta name="description" content={description} />
 </svelte:head>
 
-<Measure />
+<Measure allTime={data.allTime} />

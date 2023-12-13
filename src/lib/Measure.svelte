@@ -1,7 +1,6 @@
 <script lang="ts">
   import { download } from '@jill64/downloads-local'
   import { FlipButton, InlineModal } from '@jill64/svelte-suite'
-  import { unparse } from 'papaparse'
   import {
     FlagIcon,
     PlayIcon,
@@ -10,23 +9,27 @@
     SquareIcon,
     XIcon
   } from '@jill64/svelte-suite/icons'
+  import papaparse from 'papaparse'
+  import type { Writable } from 'svelte/store'
   import { slide } from 'svelte/transition'
   import { translate } from './i18n'
-  import { localAllTime } from './localAllTime'
   import { localRecords } from './localRecords'
   import { makeID } from './makeID'
   import { makeTimeString } from './makeTimeString'
   import { now } from './now'
 
+  const { unparse } = papaparse
+
+  export let allTime: Writable<number>
+
   let input: HTMLInputElement | undefined
   let startTime = 0
   let diffTime = 0
-  let allTime = $localAllTime
   let counting = false
   let records = $localRecords
   let started = false
 
-  $: time = allTime + diffTime
+  $: time = $allTime + diffTime
 
   setInterval(() => {
     if (counting) {
@@ -60,8 +63,7 @@
     <button
       class="rounded-full p-4 push-effect dark:pop-effect"
       on:click={() => {
-        allTime += now() - startTime
-        localAllTime.set(allTime)
+        $allTime += now() - startTime
         diffTime = 0
         counting = false
       }}
@@ -91,8 +93,7 @@
       <button
         class="rounded-full p-4 push-effect dark:pop-effect"
         on:click={() => {
-          allTime = 0
-          localAllTime.set(0)
+          $allTime = 0
           records = records.map((x) => ({ ...x, laps: [] }))
           counting = false
         }}
