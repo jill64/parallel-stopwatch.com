@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.5.0
     version: 1.5.0(@sveltejs/kit@1.29.1)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 1.0.7
-    version: 1.0.7(@sveltejs/kit@1.29.1)(svelte@4.2.8)
+    specifier: 1.0.8
+    version: 1.0.8(@sveltejs/kit@1.29.1)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 1.0.0
     version: 1.0.0
@@ -678,8 +678,8 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-input@1.5.2(svelte@4.2.8):
-    resolution: {integrity: sha512-bHKhwHQS0wrkrLUZqD9Nup/ajd9uPTmUA3ox8V8nf1VDLITj++23yVOsYpMBPpCrfUb/TZ8SUpx3HHKC1ZHtpQ==}
+  /@jill64/svelte-input@1.6.0(svelte@4.2.8):
+    resolution: {integrity: sha512-PCUhgEZU5RyxPvqqeba21ssrEY6mnExV6GCLiUNg8ee2ZULyjaPFgmcfX04Z3mUbEfMv5Xedi1qiRvGeqcGE4A==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
@@ -719,14 +719,14 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@1.0.7(@sveltejs/kit@1.29.1)(svelte@4.2.8):
-    resolution: {integrity: sha512-2qMAdyxv/3lC/jG4EqaPopNVCXxGrC2ouXrO4H1HPwePOGqqH+TiO98a+n9Tv9R6ytZzviKZr7kiYnf539sqOA==}
+  /@jill64/svelte-suite@1.0.8(@sveltejs/kit@1.29.1)(svelte@4.2.8):
+    resolution: {integrity: sha512-eKxzXfuKJgqWv2GMNpoPdT0Z7NGYr7Rxj1Boy07qQ99tGmLKRykp5zRvUH2MVoCHtD3uOUSwLVjekuVZ7DlTHQ==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
       '@jill64/svelte-dark-theme': 2.2.15(@sveltejs/kit@1.29.1)(svelte@4.2.8)
       '@jill64/svelte-i18n': 0.2.6(@sveltejs/kit@1.29.1)(svelte@4.2.8)
-      '@jill64/svelte-input': 1.5.2(svelte@4.2.8)
+      '@jill64/svelte-input': 1.6.0(svelte@4.2.8)
       '@jill64/svelte-menu': 0.1.0(svelte@4.2.8)
       '@jill64/svelte-ogp': 0.1.0(@sveltejs/kit@1.29.1)(svelte@4.2.8)
       '@jill64/svelte-storage': 1.0.1(@sveltejs/kit@1.29.1)(svelte@4.2.8)
