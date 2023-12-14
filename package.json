@@ -21,7 +21,7 @@
     "@jill64/svelte-tailwind": "1.0.0",
     "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "2.3.4",
-    "@sveltejs/kit": "1.30.3",
+    "@sveltejs/kit": "2.0.0",
     "@types/papaparse": "5.3.14",
     "nanoid": "5.0.4",
     "papaparse": "5.4.1",
