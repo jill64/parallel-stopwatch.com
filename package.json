@@ -29,7 +29,7 @@
     "svelte-baked-cookie": "0.0.4",
     "typescanner": "0.5.3",
     "typescript": "5.3.3",
-    "vite": "5.0.8",
+    "vite": "5.0.9",
     "vitest": "1.0.4"
   }
 }
