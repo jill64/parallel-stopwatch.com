@@ -4,6 +4,6 @@
     "allowJs": true,
     "checkJs": true,
     "strict": true,
-    "moduleResolution": "Bundler",
+    "moduleResolution": "Bundler"
   }
 }
