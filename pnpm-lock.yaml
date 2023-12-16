@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.6.1
     version: 1.6.1(@sveltejs/kit@2.0.0)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 1.1.5
-    version: 1.1.5(@sveltejs/kit@2.0.0)(svelte@4.2.8)
+    specifier: 1.1.6
+    version: 1.1.6(@sveltejs/kit@2.0.0)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 1.0.1
     version: 1.0.1
@@ -436,8 +436,8 @@ packages:
       - svelte
     dev: true
 
-  /@jill64/svelte-dark-theme@2.3.1(@sveltejs/kit@2.0.0)(svelte@4.2.8):
-    resolution: {integrity: sha512-I1Cv4kKEPYj+HXV0gPeZLRvmARhp3M3U3l4Qec5ZzY8nQACpt1QvrQbPRLxbK5l4FchQOHsojCdF4/qV02mYJg==}
+  /@jill64/svelte-dark-theme@2.3.2(@sveltejs/kit@2.0.0)(svelte@4.2.8):
+    resolution: {integrity: sha512-HAP7LSn8WQQXGKbVDO4f9VL66Z4r3+pOTE0Zk11HHn5A4srny7WEvwxUsnhD0iAcDPRDLxFXYIO9ermvRRYn1Q==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
@@ -448,7 +448,7 @@ packages:
       '@sveltejs/kit': 2.0.0(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       svelte: 4.2.8
       svelte-baked-cookie: 1.0.0(@sveltejs/kit@2.0.0)(svelte@4.2.8)
-      svelte-feather-icons: 4.0.1
+      svelte-feather-icons: 4.1.0
       typescanner: 0.5.3
     dev: true
 
@@ -525,13 +525,13 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@1.1.5(@sveltejs/kit@2.0.0)(svelte@4.2.8):
-    resolution: {integrity: sha512-nV/BejLa2p+kmFd5hVUBoGODeboVBtUS+3Q8vV9yUbqu+GQ+EV31zt4dwQobyHAJwfbSMYzEhl8J5InM34DYGA==}
+  /@jill64/svelte-suite@1.1.6(@sveltejs/kit@2.0.0)(svelte@4.2.8):
+    resolution: {integrity: sha512-OWqyq7GhU920DI4jC49C3NmDiz9o6ksSv3kAiqZjbEarBkJL7iKw22zknVagI8A/jS1pBTKVnLwizqsi3sNaOg==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
     dependencies:
-      '@jill64/svelte-dark-theme': 2.3.1(@sveltejs/kit@2.0.0)(svelte@4.2.8)
+      '@jill64/svelte-dark-theme': 2.3.2(@sveltejs/kit@2.0.0)(svelte@4.2.8)
       '@jill64/svelte-i18n': 1.0.0(@sveltejs/kit@2.0.0)(svelte@4.2.8)
       '@jill64/svelte-input': 1.6.1(svelte@4.2.8)
       '@jill64/svelte-menu': 1.0.1(svelte@4.2.8)
@@ -3216,12 +3216,6 @@ packages:
       postcss: 8.4.32
       postcss-scss: 4.0.9(postcss@8.4.32)
       svelte: 4.2.8
-    dev: true
-
-  /svelte-feather-icons@4.0.1:
-    resolution: {integrity: sha512-DMDrlbblaRUHLcTFtKHE4GWQ/Fk/kneGIZrrI75EmTxCu1hgHe8uq8e80ONrmdjL/i3f1d8fkcx73SWng2X6Gg==}
-    dependencies:
-      svelte: 3.59.2
     dev: true
 
   /svelte-feather-icons@4.1.0:
