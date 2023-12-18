@@ -24,8 +24,8 @@ devDependencies:
     specifier: 1.1.15
     version: 1.1.15(@sveltejs/kit@2.0.1)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
-    specifier: 1.0.1
-    version: 1.0.1
+    specifier: 1.0.3
+    version: 1.0.3
   '@playwright/test':
     specifier: 1.40.1
     version: 1.40.1
@@ -557,11 +557,11 @@ packages:
       ts-serde: 1.0.0
     dev: true
 
-  /@jill64/svelte-tailwind@1.0.1:
-    resolution: {integrity: sha512-xdLMgBpfI8qe1TJ+UcPtmF90GWYjO4UEJa/dTYxeI1ZjWs2i2D2LQNowOF0B8mulOOTQy0giQs4XjU1dfIEUoA==}
+  /@jill64/svelte-tailwind@1.0.3:
+    resolution: {integrity: sha512-b25O0EPpU1GRrxprGsKVabYTv3uCirx53bb5kbM0nu2NShaoWtTM3ChVsH57EPx3juHnjaJ0rl7RpqvjLL4sgA==}
     dependencies:
-      '@jill64/tailwind-grid-auto': 1.3.0(tailwindcss@3.3.6)
-      '@jill64/tailwind-reactions': 1.2.0(tailwindcss@3.3.6)
+      '@jill64/tailwind-grid-auto': 1.3.1(tailwindcss@3.3.6)
+      '@jill64/tailwind-reactions': 1.2.1(tailwindcss@3.3.6)
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 5.0.2(postcss@8.4.32)
@@ -584,16 +584,16 @@ packages:
       - '@sveltejs/kit'
     dev: true
 
-  /@jill64/tailwind-grid-auto@1.3.0(tailwindcss@3.3.6):
-    resolution: {integrity: sha512-ZwwAENdB/ZMcljFEZVUDgZpQ5BmKmPYX/W0zsrjtcewoZUL7s8xzZRwyxe8p1SSQB6B//AhShdULXLBLQbcz8A==}
+  /@jill64/tailwind-grid-auto@1.3.1(tailwindcss@3.3.6):
+    resolution: {integrity: sha512-XoOsS7NsiZPN2XLKd/n28fD+Bkk/RTTdLTvrQm//mLU0XCHRMDFL6UsSxENZ5F3afnB4VxXHH9AOyNMKii1WeQ==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
       tailwindcss: 3.3.6
     dev: true
 
-  /@jill64/tailwind-reactions@1.2.0(tailwindcss@3.3.6):
-    resolution: {integrity: sha512-XsAYuF1/SSMVmgVdK0JeFjimvVutbkW1z8WKZTJRVNyTB33VkZIlZhTx2/VvkyY2DLDmTU3RYPyKOmKKQFtoOQ==}
+  /@jill64/tailwind-reactions@1.2.1(tailwindcss@3.3.6):
+    resolution: {integrity: sha512-DFi7KihbjBkoVDoCqNGAuEF2cGod/kHP56xdj/yV0hCsKaLusiO1XZ5GlUWjZnpqX1XHu/zGEpptl80iVV5V5A==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
