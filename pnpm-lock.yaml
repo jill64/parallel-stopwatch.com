@@ -24,8 +24,8 @@ devDependencies:
     specifier: 1.1.28
     version: 1.1.28(@sveltejs/kit@2.0.3)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
-    specifier: 1.0.4
-    version: 1.0.4
+    specifier: 1.0.8
+    version: 1.0.8
   '@playwright/test':
     specifier: 1.40.1
     version: 1.40.1
@@ -546,15 +546,15 @@ packages:
       ts-serde: 1.0.2
     dev: true
 
-  /@jill64/svelte-tailwind@1.0.4:
-    resolution: {integrity: sha512-XTU/sdLmD0QadX+3c6/Vd2vuZER8DFgZGpnXGNY7B6Kn0hsiCazrCfaoiWocviyY3Z/5YOiUmNm3xadhtd14cg==}
+  /@jill64/svelte-tailwind@1.0.8:
+    resolution: {integrity: sha512-MaHWehiraLVLODCDILHRvqb2Pc2L/m0822YS8+Z3y+d34kYPgLtUGehYKl/llTABhwNazLdnOwtOgJONiObQAg==}
     dependencies:
-      '@jill64/tailwind-grid-auto': 1.3.2(tailwindcss@3.3.6)
-      '@jill64/tailwind-reactions': 1.2.1(tailwindcss@3.3.6)
+      '@jill64/tailwind-grid-auto': 1.3.4(tailwindcss@3.4.0)
+      '@jill64/tailwind-reactions': 1.2.5(tailwindcss@3.4.0)
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 5.0.2(postcss@8.4.32)
-      tailwindcss: 3.3.6
+      tailwindcss: 3.4.0
     transitivePeerDependencies:
       - jiti
       - ts-node
@@ -573,20 +573,20 @@ packages:
       - '@sveltejs/kit'
     dev: true
 
-  /@jill64/tailwind-grid-auto@1.3.2(tailwindcss@3.3.6):
-    resolution: {integrity: sha512-rSJWLh8cd4CifgJt3Y6L1M5E2MzvP7kcsbl1Y5pDs/o0qhiLq3odClzFbuEsdXOH73VZafHZy26lZ/KyluZaGQ==}
+  /@jill64/tailwind-grid-auto@1.3.4(tailwindcss@3.4.0):
+    resolution: {integrity: sha512-R7xkxaG7gd4B8ei78QuvFc41qMw9Kt5hB/y9vMlY0z5MlVyqnaCLTuvrHjo5ei9Vq2ijtZiNBPJRTPKdJ9aMsQ==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
-      tailwindcss: 3.3.6
+      tailwindcss: 3.4.0
     dev: true
 
-  /@jill64/tailwind-reactions@1.2.1(tailwindcss@3.3.6):
-    resolution: {integrity: sha512-DFi7KihbjBkoVDoCqNGAuEF2cGod/kHP56xdj/yV0hCsKaLusiO1XZ5GlUWjZnpqX1XHu/zGEpptl80iVV5V5A==}
+  /@jill64/tailwind-reactions@1.2.5(tailwindcss@3.4.0):
+    resolution: {integrity: sha512-NFmj3ghQR4fxb9cN4Wybg3uipp9A8sNlTlTfjR/t8M0TPOxYKxhonWweQ+s9Ubg5LTkms/O70t8ZCSHZbTVuow==}
     peerDependencies:
       tailwindcss: ^3.0.0
     dependencies:
-      tailwindcss: 3.3.6
+      tailwindcss: 3.4.0
     dev: true
 
   /@jill64/transform@1.0.0:
@@ -3382,8 +3382,8 @@ packages:
       periscopic: 3.1.0
     dev: true
 
-  /tailwindcss@3.3.6:
-    resolution: {integrity: sha512-AKjF7qbbLvLaPieoKeTjG1+FyNZT6KaJMJPFeQyLfIp7l82ggH1fbHJSsYIvnbTFQOlkh+gBYpyby5GT1LIdLw==}
+  /tailwindcss@3.4.0:
+    resolution: {integrity: sha512-VigzymniH77knD1dryXbyxR+ePHihHociZbXnLZHUyzf2MMs2ZVqlUrZ3FvpXP8pno9JzmILt1sZPD19M3IxtA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
