@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.7.0
     version: 1.7.0(@sveltejs/kit@2.0.5)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 1.1.28
-    version: 1.1.28(@sveltejs/kit@2.0.5)(svelte@4.2.8)
+    specifier: 1.1.31
+    version: 1.1.31(@sveltejs/kit@2.0.5)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 1.0.9
     version: 1.0.9
@@ -352,8 +352,8 @@ packages:
       '@sinclair/typebox': 0.27.8
     dev: true
 
-  /@jill64/async-observer@1.2.0:
-    resolution: {integrity: sha512-qXM9YZMZPO8mQ3bMyAtHjlxyH9Q74tCbEinZVDzYgpGwKLNEFF/1099bPLBCBfUkOgOiwwB5H7/o8EvpTg+Lbg==}
+  /@jill64/async-observer@1.2.2:
+    resolution: {integrity: sha512-MYd+S/xS1ZFjX6koiJPrmuS/vHR6JkUn78nUaHDTwzW+u9cGN2MAOQJigUndMZyCoMoLyVUgilMU6YE6S26xIQ==}
     dev: true
 
   /@jill64/downloads-local@1.1.0:
@@ -407,14 +407,14 @@ packages:
       - svelte
     dev: true
 
-  /@jill64/svelte-dark-theme@2.3.8(@sveltejs/kit@2.0.5)(svelte@4.2.8):
-    resolution: {integrity: sha512-/LKTvQ5VKLUuFIr34+G61U5qryssMAmXHtHB3yLGDzalVwNGxEs+xDY65u0t6NldqFbZVzkAqe6t3VcihDENKQ==}
+  /@jill64/svelte-dark-theme@2.3.9(@sveltejs/kit@2.0.5)(svelte@4.2.8):
+    resolution: {integrity: sha512-Kat2fxtyzV940f39k0bqWdiOTQGFyLPsPM3mS5QOQVPL9pP8pq0vHcPaU9copM2W4HoYdf/ukWiDRyq0tJgxPA==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
     dependencies:
       '@jill64/svelte-device-theme': 1.2.7(@sveltejs/kit@2.0.5)(svelte@4.2.8)
-      '@jill64/svelte-html': 1.1.1(@sveltejs/kit@2.0.5)(svelte@4.2.8)
+      '@jill64/svelte-html': 1.1.2(@sveltejs/kit@2.0.5)(svelte@4.2.8)
       '@jill64/svelte-storage': 1.1.3(@sveltejs/kit@2.0.5)(svelte@4.2.8)
       '@sveltejs/kit': 2.0.5(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       svelte: 4.2.8
@@ -444,8 +444,18 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-i18n@1.0.3(@sveltejs/kit@2.0.5)(svelte@4.2.8):
-    resolution: {integrity: sha512-bUsBo7T2yjuOKe5buNtnNVPRWIZEIXx3kgz1P3PX9Uw3OjHOTD4h8W6UNfPi34xXtOUHwUkXR7JZSHzyfg22Aw==}
+  /@jill64/svelte-html@1.1.2(@sveltejs/kit@2.0.5)(svelte@4.2.8):
+    resolution: {integrity: sha512-VGW5laO+i6pMV87pSjCfudDi8jxxsYasAAfLzwXh0oh7qwZcxBE6nZBdyidpCgioq/mILzWAhUn6BWqwIhjBcQ==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@sveltejs/kit': 2.0.5(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
+      svelte: 4.2.8
+    dev: true
+
+  /@jill64/svelte-i18n@1.0.4(@sveltejs/kit@2.0.5)(svelte@4.2.8):
+    resolution: {integrity: sha512-4UnOG9Acj3/NeOMoGszOAqueFwlOSgRvIQL1BhuqTDlnuupLJTBWAphFLugJb/COVStPx9gfMtNaij4smZJ/2A==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
@@ -455,12 +465,12 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-input@1.6.5(svelte@4.2.8):
-    resolution: {integrity: sha512-+YiNO88ZrJ0a0s+7Vglmd9U6okf1VyyUP62GYDFEh3EECQjHAogxbnrUtnBW3f+YUDPgQDclo+iYpPijMwtRuQ==}
+  /@jill64/svelte-input@1.6.6(svelte@4.2.8):
+    resolution: {integrity: sha512-WHooi4CINeRxZhbxmKDenfIhKjkY5r4zNCWOSU1kpLJzbZSriRBCaWDGDm5TFqq9Rwa/AXe/oeD50LRWgbl9Pg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      '@jill64/async-observer': 1.2.0
+      '@jill64/async-observer': 1.2.2
       bignumber.js: 9.1.2
       svelte: 4.2.8
       svelte-loading-spinners: 0.3.4
@@ -496,15 +506,15 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@1.1.28(@sveltejs/kit@2.0.5)(svelte@4.2.8):
-    resolution: {integrity: sha512-fKtkcTuXa8cHE0hCFuNKsGLhgv/EY0u2s3+VZsK0PksIRUHloPGmuEW2bykK7uqRsw7rhDzuM6Eod2PrIu3zNw==}
+  /@jill64/svelte-suite@1.1.31(@sveltejs/kit@2.0.5)(svelte@4.2.8):
+    resolution: {integrity: sha512-HdguYrhf2Y+wbcSu2HmOA41SofvdRsS1fmfB0WuxAMaJc1xEUdePr/Lwy3VZI8yATUX+aUaOmzUC7oBu2Vdo4A==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
     dependencies:
-      '@jill64/svelte-dark-theme': 2.3.8(@sveltejs/kit@2.0.5)(svelte@4.2.8)
-      '@jill64/svelte-i18n': 1.0.3(@sveltejs/kit@2.0.5)(svelte@4.2.8)
-      '@jill64/svelte-input': 1.6.5(svelte@4.2.8)
+      '@jill64/svelte-dark-theme': 2.3.9(@sveltejs/kit@2.0.5)(svelte@4.2.8)
+      '@jill64/svelte-i18n': 1.0.4(@sveltejs/kit@2.0.5)(svelte@4.2.8)
+      '@jill64/svelte-input': 1.6.6(svelte@4.2.8)
       '@jill64/svelte-menu': 1.0.5(svelte@4.2.8)
       '@jill64/svelte-ogp': 1.1.2(@sveltejs/kit@2.0.5)(svelte@4.2.8)
       '@jill64/svelte-storage': 1.1.3(@sveltejs/kit@2.0.5)(svelte@4.2.8)
