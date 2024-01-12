@@ -51,8 +51,8 @@ devDependencies:
     specifier: 4.2.8
     version: 4.2.8
   svelte-baked-cookie:
-    specifier: 1.0.6
-    version: 1.0.6(@sveltejs/kit@2.3.2)(svelte@4.2.8)
+    specifier: 1.0.7
+    version: 1.0.7(@sveltejs/kit@2.3.2)(svelte@4.2.8)
   typescanner:
     specifier: 0.5.3
     version: 0.5.3
@@ -2717,8 +2717,8 @@ packages:
       ts-serde: 1.0.2
     dev: true
 
-  /svelte-baked-cookie@1.0.6(@sveltejs/kit@2.3.2)(svelte@4.2.8):
-    resolution: {integrity: sha512-MJWP441LHYujCb3qz35cYVvypvBKTMcHTj0bRKDBLw53lqYNglrl4ATSddybNB2mEPjT4BYL8oyqeHJvv8xy3A==}
+  /svelte-baked-cookie@1.0.7(@sveltejs/kit@2.3.2)(svelte@4.2.8):
+    resolution: {integrity: sha512-khLoO7DrvByo4WQJQ/VHilhw/HN25aSY8+Qzu03Ksvz6MlJ5CwSclQ6/fMvrk0M8q+waIN7w7Vn5Ws7gBOYEoQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
