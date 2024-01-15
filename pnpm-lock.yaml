@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.7.1
     version: 1.7.1(@sveltejs/kit@2.3.2)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 1.1.50
-    version: 1.1.50(@sveltejs/kit@2.3.2)(svelte@4.2.8)
+    specifier: 1.1.51
+    version: 1.1.51(@sveltejs/kit@2.3.2)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 1.0.16
     version: 1.0.16
@@ -407,14 +407,14 @@ packages:
       - svelte
     dev: true
 
-  /@jill64/svelte-dark-theme@2.3.14(@sveltejs/kit@2.3.2)(svelte@4.2.8):
-    resolution: {integrity: sha512-eTeeF1BVCOqkBR5wqWeU5qZQ5MWgTzPU+HjSSNLzQ19xZmLnNobdL7Jo5cdznMz8XIC1m/qbnLGT+j5rqpVxEQ==}
+  /@jill64/svelte-dark-theme@2.3.15(@sveltejs/kit@2.3.2)(svelte@4.2.8):
+    resolution: {integrity: sha512-FIpr8DVuyvvWKFc/Z5LnRMgn9W5cmZeubJ0x+cTCgoxrp8D6Ryzd7K8kp/6Dl8VvKfZRuGClLxtbmEZHmuGVTA==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
     dependencies:
       '@jill64/svelte-device-theme': 1.2.9(@sveltejs/kit@2.3.2)(svelte@4.2.8)
-      '@jill64/svelte-html': 1.1.2(@sveltejs/kit@2.3.2)(svelte@4.2.8)
+      '@jill64/svelte-html': 1.1.3(@sveltejs/kit@2.3.2)(svelte@4.2.8)
       '@jill64/svelte-storage': 1.1.4(@sveltejs/kit@2.3.2)(svelte@4.2.8)
       '@sveltejs/kit': 2.3.2(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
       svelte: 4.2.8
@@ -517,13 +517,13 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@1.1.50(@sveltejs/kit@2.3.2)(svelte@4.2.8):
-    resolution: {integrity: sha512-OVxsTszg/jRYLcHbiVzPu7tEWU0BnvMVS7hvS6XVUp2kxJ6vpViCsalieDBGPfDEzBV71aWCFArsRocCyMWFyQ==}
+  /@jill64/svelte-suite@1.1.51(@sveltejs/kit@2.3.2)(svelte@4.2.8):
+    resolution: {integrity: sha512-aE057lddVkmPMz3YhR09zxesjjfYNyAUovD1epg2byJxiSHW4EnLukPy/ASu+xdOOxI3ophCrdfr4w0ZMCfZmQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
     dependencies:
-      '@jill64/svelte-dark-theme': 2.3.14(@sveltejs/kit@2.3.2)(svelte@4.2.8)
+      '@jill64/svelte-dark-theme': 2.3.15(@sveltejs/kit@2.3.2)(svelte@4.2.8)
       '@jill64/svelte-i18n': 1.0.8(@sveltejs/kit@2.3.2)(svelte@4.2.8)
       '@jill64/svelte-input': 1.6.8(svelte@4.2.8)
       '@jill64/svelte-menu': 1.0.7(svelte@4.2.8)
