@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.7.2
     version: 1.7.2(@sveltejs/kit@2.3.3)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 1.1.55
-    version: 1.1.55(@sveltejs/kit@2.3.3)(svelte@4.2.8)
+    specifier: 1.1.56
+    version: 1.1.56(@sveltejs/kit@2.3.3)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 1.0.16
     version: 1.0.16
@@ -703,8 +703,8 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@1.1.55(@sveltejs/kit@2.3.3)(svelte@4.2.8):
-    resolution: {integrity: sha512-e1SwiDLLL+w03eX4GneunMomRSOPifWCWWV6N/Mv3qgEnQcYMu1jnQBAZ9A1ImCO9402wHDXOr5tK3IQ6/0U5w==}
+  /@jill64/svelte-suite@1.1.56(@sveltejs/kit@2.3.3)(svelte@4.2.8):
+    resolution: {integrity: sha512-hLjRuZ/bw9SC4INhCbk+az9rqKSFtlOsgA3lD3l4VL0pgQOmv8WUfz5Ap0loywxWIBn0hU5zXekLCc0m7A0gpA==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
@@ -719,7 +719,7 @@ packages:
       '@sveltejs/kit': 2.3.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
       svelte: 4.2.8
       svelte-feather-icons: 4.1.0
-      svelte-inline-modal: 1.1.5(svelte@4.2.8)
+      svelte-inline-modal: 1.1.6(svelte@4.2.8)
       svelte-qparam: 1.0.7(@sveltejs/kit@2.3.3)(svelte@4.2.8)
       ts-serde: 1.0.2
     dev: true
@@ -3036,8 +3036,8 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /svelte-inline-modal@1.1.5(svelte@4.2.8):
-    resolution: {integrity: sha512-+b19l4Uu7iAKUhW1sQnevEqN/Suydtxztmj0MttNmoChgH1XzezVVRVDcOe9TfpIEyX9whM26Byi7k90jeZekw==}
+  /svelte-inline-modal@1.1.6(svelte@4.2.8):
+    resolution: {integrity: sha512-9ANqNxI1IRGatZtOtvQ4jnJXFq7S8g96b5hmL2LX3iEqEMBBbaO1HxIxgd1tW8XRS6TRzFk8CgqC4e8DoqF3qg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
