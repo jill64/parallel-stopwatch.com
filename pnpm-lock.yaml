@@ -51,8 +51,8 @@ devDependencies:
     specifier: 4.2.9
     version: 4.2.9
   svelte-baked-cookie:
-    specifier: 1.0.8
-    version: 1.0.8(@sveltejs/kit@2.4.1)(svelte@4.2.9)
+    specifier: 1.0.9
+    version: 1.0.9(@sveltejs/kit@2.4.1)(svelte@4.2.9)
   typescanner:
     specifier: 0.5.3
     version: 0.5.3
@@ -593,6 +593,10 @@ packages:
 
   /@jill64/transform@1.0.0:
     resolution: {integrity: sha512-pwyMLSxedzcOnSqd9ylutdsV8/9hejjwbox65uJQBDVOy7m+QS4OUYi1+VXsxG3do1l58E2WrXgzB3d7sxUMKQ==}
+    dev: true
+
+  /@jill64/transform@1.0.1:
+    resolution: {integrity: sha512-Z4paRUK0nVsULhCIekMG7kiJ0jvriSlvLSnRFzHERBRIHL8+Ip/NpaSFS44ZcRH7zZZ67xNwoMqpOl9dnj9EPA==}
     dev: true
 
   /@jill64/typed-storage@2.0.6:
@@ -2782,6 +2786,20 @@ packages:
       svelte: ^4.0.0
     dependencies:
       '@jill64/transform': 1.0.0
+      '@sveltejs/kit': 2.4.1(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.9)(vite@5.0.12)
+      '@types/cookie': 0.6.0
+      cookie: 0.6.0
+      svelte: 4.2.9
+      ts-serde: 1.0.2
+    dev: true
+
+  /svelte-baked-cookie@1.0.9(@sveltejs/kit@2.4.1)(svelte@4.2.9):
+    resolution: {integrity: sha512-ivtCsbfVe/GkED0QnBF4/2IG+SQRSWrzVRBHMDMjrFH1eKGRvBiFY9SE3msgGsghYj5KidwZpx6Qw6C5+Gf4TA==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@jill64/transform': 1.0.1
       '@sveltejs/kit': 2.4.1(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.9)(vite@5.0.12)
       '@types/cookie': 0.6.0
       cookie: 0.6.0
