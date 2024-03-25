@@ -1,9 +1,8 @@
 <script lang="ts">
-  import { dev } from '$app/environment'
+  import { page } from '$app/stores'
 </script>
 
-{#if !dev}
-  <!-- Google tag (gtag.js) -->
+{#if $page.url.host !== 'localhost'}
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-SR1NCE4S63"
