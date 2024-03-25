@@ -11,6 +11,7 @@
     Toaster,
     theme
   } from '@jill64/svelte-suite'
+  import GoogleAnalytics from './GoogleAnalytics.svelte'
   import '../app.postcss'
 
   export let data
@@ -43,6 +44,7 @@
   <link rel="icon" href="{base}/favicon{suffix}.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="{base}/apple-touch-icon{suffix}.png" />
   <meta name="description" content={description} />
+  <GoogleAnalytics />
 </svelte:head>
 
 <Measure allTime={data.allTime} />
