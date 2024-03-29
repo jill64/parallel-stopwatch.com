@@ -2,7 +2,7 @@
   import { page } from '$app/stores'
 </script>
 
-{#if $page.url.origin !== 'localhost'}
+{#if $page.url.host !== 'localhost'}
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-SR1NCE4S63"
