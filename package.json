@@ -25,7 +25,7 @@
     "@types/papaparse": "5.3.14",
     "nanoid": "5.0.7",
     "papaparse": "5.4.1",
-    "svelte": "4.2.12",
+    "svelte": "4.2.13",
     "svelte-baked-cookie": "1.0.20",
     "typescanner": "0.5.3",
     "typescript": "5.4.4",
