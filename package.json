@@ -17,7 +17,7 @@
     "@jill64/playwright-config": "2.4.1",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "1.7.16",
-    "@jill64/svelte-suite": "1.2.246",
+    "@jill64/svelte-suite": "1.2.247",
     "@jill64/svelte-tailwind": "1.2.64",
     "@playwright/test": "1.48.2",
     "@sveltejs/adapter-cloudflare": "4.7.4",
