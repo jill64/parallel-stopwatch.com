@@ -19,7 +19,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "1.7.16",
     "@jill64/svelte-suite": "1.2.248",
     "@jill64/svelte-tailwind": "1.2.68",
-    "@playwright/test": "1.48.2",
+    "@playwright/test": "1.49.0",
     "@sveltejs/adapter-cloudflare": "4.7.4",
     "@sveltejs/kit": "2.8.1",
     "@types/papaparse": "5.3.15",
