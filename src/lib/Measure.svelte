@@ -20,16 +20,20 @@
 
   const { unparse } = papaparse
 
-  export let allTime: Writable<number>
+  let {
+    allTime
+  }: {
+    allTime: Writable<number>
+  } = $props()
 
   let input: HTMLInputElement | undefined
-  let startTime = 0
-  let diffTime = 0
-  let counting = false
-  let records = $localRecords
-  let started = false
+  let startTime = $state(0)
+  let diffTime = $state(0)
+  let counting = $state(false)
+  let records = $state($localRecords)
+  let started = $state(false)
 
-  $: time = $allTime + diffTime
+  let time = $derived($allTime + diffTime)
 
   setInterval(() => {
     if (counting) {
@@ -62,7 +66,7 @@
   {#if counting}
     <button
       class="rounded-full p-4 push-effect dark:pop-effect"
-      on:click={() => {
+      onclick={() => {
         $allTime += now() - startTime
         diffTime = 0
         counting = false
@@ -77,7 +81,7 @@
   {:else}
     <button
       class="rounded-full p-4 push-effect dark:pop-effect"
-      on:click={() => {
+      onclick={() => {
         startTime = now()
         counting = true
         started = true
@@ -92,7 +96,7 @@
     {#if time}
       <button
         class="rounded-full p-4 push-effect dark:pop-effect"
-        on:click={() => {
+        onclick={() => {
           $allTime = 0
           records = records.map((x) => ({ ...x, laps: [] }))
           counting = false
@@ -113,7 +117,7 @@
   <InlineModal let:open>
     <button
       class="text-lg push-effect dark:pop-effect rounded-full border border-gray-500 px-6 py-2 select-none"
-      on:click={() => {
+      onclick={() => {
         open()
         setTimeout(() => input?.select(), 10)
       }}
@@ -140,7 +144,7 @@
         .csv
       </div>
       <button
-        on:click={() => {
+        onclick={() => {
           const maxLap = records.length
             ? Math.max(...records.map((x) => x.laps.length))
             : 0
@@ -175,13 +179,13 @@
       </button>
     </div>
   </InlineModal>
-  <div />
+  <div></div>
   {#each records as record, index (record.id)}
     {@const laps = record.laps}
     <div class="flex items-center gap-4" transition:slide>
       <button
         class="rounded-full p-2 push-effect dark:pop-effect"
-        on:click={() => {
+        onclick={() => {
           records = [...records.slice(0, index), ...records.slice(index + 1)]
           localRecords.set(records)
         }}
@@ -201,7 +205,7 @@
         {#if counting}
           <button
             class="rounded-full p-3 push-effect dark:pop-effect"
-            on:click={() => {
+            onclick={() => {
               record.laps = [...record.laps, time]
               localRecords.set(records)
             }}
@@ -227,7 +231,7 @@
   {/each}
   <button
     class="rounded-full p-3 push-effect dark:pop-effect"
-    on:click={() => {
+    onclick={() => {
       records = [
         ...records,
         {

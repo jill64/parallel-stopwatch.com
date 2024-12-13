@@ -11,22 +11,26 @@
     Toaster,
     theme
   } from '@jill64/svelte-suite'
-  import GoogleAnalytics from './GoogleAnalytics.svelte'
   import '../app.postcss'
+  import GoogleAnalytics from './GoogleAnalytics.svelte'
 
-  export let data
+  let { data } = $props()
 
-  $: title = $translate({
-    en: 'Parallel Stopwatch',
-    ja: 'パラレルストップウォッチ'
-  })
+  let title = $derived(
+    $translate({
+      en: 'Parallel Stopwatch',
+      ja: 'パラレルストップウォッチ'
+    })
+  )
 
-  $: description = $translate({
-    en: 'Simultaneously start any number of stopwatches and record them individually.\nYou can output the result as a csv file.',
-    ja: '複数のストップウォッチを同時にスタートさせ、個別に記録します。\n結果はcsvファイルで出力することができます。'
-  })
+  let description = $derived(
+    $translate({
+      en: 'Simultaneously start any number of stopwatches and record them individually.\nYou can output the result as a csv file.',
+      ja: '複数のストップウォッチを同時にスタートさせ、個別に記録します。\n結果はcsvファイルで出力することができます。'
+    })
+  )
 
-  $: suffix = $theme === 'dark' ? '-dark' : ''
+  let suffix = $derived($theme === 'dark' ? '-dark' : '')
 </script>
 
 <Toaster position="bottom-right" />
