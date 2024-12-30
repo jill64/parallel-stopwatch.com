@@ -43,4 +43,4 @@
   <meta name="description" content={description} />
 </svelte:head>
 
-<Measure allTime={data.allTime} />
+<Measure cookie={data.cookie} />

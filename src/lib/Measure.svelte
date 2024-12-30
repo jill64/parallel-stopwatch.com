@@ -10,7 +10,6 @@
     XIcon
   } from '@jill64/svelte-suite/icons'
   import papaparse from 'papaparse'
-  import type { Writable } from 'svelte/store'
   import { slide } from 'svelte/transition'
   import { i } from './i18n'
   import { localStorage } from './localStorage'
@@ -21,9 +20,11 @@
   const { unparse } = papaparse
 
   let {
-    allTime
+    cookie: c
   }: {
-    allTime: Writable<number>
+    cookie: {
+      allTime: number
+    }
   } = $props()
 
   let input: HTMLInputElement | undefined
@@ -33,7 +34,7 @@
   let records = $state(localStorage.records)
   let started = $state(false)
 
-  let time = $derived($allTime + diffTime)
+  let time = $derived(c.allTime + diffTime)
 
   setInterval(() => {
     if (counting) {
@@ -67,7 +68,7 @@
     <button
       class="rounded-full p-4 push-effect dark:pop-effect"
       onclick={() => {
-        $allTime += now() - startTime
+        c.allTime += now() - startTime
         diffTime = 0
         counting = false
       }}
@@ -97,7 +98,7 @@
       <button
         class="rounded-full p-4 push-effect dark:pop-effect"
         onclick={() => {
-          $allTime = 0
+          c.allTime = 0
           records = records.map((x) => ({ ...x, laps: [] }))
           counting = false
         }}
