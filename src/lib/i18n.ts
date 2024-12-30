@@ -1,8 +1,8 @@
-import { i18nInit } from '@jill64/svelte-suite'
+import { init } from '@jill64/svelte-suite/i18n'
 
 export const locales = ['en', 'ja'] as const
 
-export const { match, translate, attach } = i18nInit({
+export const i = init({
   slug: '[locale=locale]',
   locales: ['en', 'ja']
 })
