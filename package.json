@@ -6,7 +6,7 @@
     "test": "vitest",
     "test:e2e": "playwright test",
     "preview": "npm run build && vite preview",
-    "format": "npx @jill64/psx",
+    "format": "npx psvx",
     "lint": "npm run check && npx eslint .",
     "check": "svelte-kit sync && npx svelte-check"
   },
@@ -17,7 +17,7 @@
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.1",
-    "@jill64/svelte-suite": "1.2.253",
+    "@jill64/svelte-suite": "2.0.3",
     "@jill64/svelte-tailwind": "1.2.74",
     "@playwright/test": "1.49.1",
     "@sveltejs/adapter-cloudflare": "5.0.0",

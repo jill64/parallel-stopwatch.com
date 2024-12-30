@@ -10,10 +10,9 @@ const isRecordData = scanner<RecordData>({
   laps: array(number)
 })
 
-export const localRecords = storage(
-  'records',
-  json(
+export const localStorage = storage({
+  records: json(
     (x): x is RecordData[] => Array.isArray(x) && x.every(isRecordData),
     [{ id: makeID(), name: 'Record 1', laps: [] }]
   )
-)
+})

@@ -12,8 +12,8 @@
   import papaparse from 'papaparse'
   import type { Writable } from 'svelte/store'
   import { slide } from 'svelte/transition'
-  import { translate } from './i18n'
-  import { localRecords } from './localRecords'
+  import { i } from './i18n'
+  import { localStorage } from './localStorage'
   import { makeID } from './makeID'
   import { makeTimeString } from './makeTimeString'
   import { now } from './now'
@@ -30,7 +30,7 @@
   let startTime = $state(0)
   let diffTime = $state(0)
   let counting = $state(false)
-  let records = $state($localRecords)
+  let records = $state(localStorage.records)
   let started = $state(false)
 
   let time = $derived($allTime + diffTime)
@@ -55,7 +55,7 @@
 
 <h1
   class="text-7xl sm:text-9xl flex justify-center m-10"
-  aria-label={$translate({
+  aria-label={i.translate({
     en: 'Time',
     ja: 'タイム'
   })}
@@ -71,7 +71,7 @@
         diffTime = 0
         counting = false
       }}
-      title={$translate({
+      title={i.translate({
         en: 'Stop',
         ja: 'ストップ'
       })}
@@ -86,7 +86,7 @@
         counting = true
         started = true
       }}
-      title={$translate({
+      title={i.translate({
         en: 'Start',
         ja: 'スタート'
       })}
@@ -101,7 +101,7 @@
           records = records.map((x) => ({ ...x, laps: [] }))
           counting = false
         }}
-        title={$translate({
+        title={i.translate({
           en: 'Reset',
           ja: 'リセット'
         })}
@@ -114,70 +114,73 @@
 <div
   class="grid sm:cols-auto-2 px-8 place-items-center sm:justify-start sm:w-[90vw] gap-4"
 >
-  <InlineModal let:open>
-    <button
-      class="text-lg push-effect dark:pop-effect rounded-full border border-gray-500 px-6 py-2 select-none"
-      onclick={() => {
-        open()
-        setTimeout(() => input?.select(), 10)
-      }}
-    >
-      {$translate({
-        en: 'Export as CSV',
-        ja: 'CSVとしてエクスポート'
-      })}
-    </button>
-    <div
-      class="flex flex-col gap-4 rounded-lg p-6 bg-[rgba(255,255,255,0.8)] dark:bg-[rgba(50,50,52,0.8)] backdrop-blur shadow"
-      slot="menu"
-    >
-      <div>
-        <input
-          bind:this={input}
-          title={$translate({
-            en: 'File name',
-            ja: 'ファイル名'
-          })}
-          value="records-{new Date().toISOString().slice(0, 10)}"
-          class="w-[50vw] bg-inherit sm:w-96 focus-under border-gray-500 text-2xl"
-        />
-        .csv
-      </div>
+  <InlineModal>
+    {#snippet button(open)}
       <button
+        class="text-lg push-effect dark:pop-effect rounded-full border border-gray-500 px-6 py-2 select-none"
         onclick={() => {
-          const maxLap = records.length
-            ? Math.max(...records.map((x) => x.laps.length))
-            : 0
-
-          const str = unparse(
-            [
-              records.map((x) => x.name),
-              ...[...Array(maxLap)].map((_, index) =>
-                records.map((x) =>
-                  makeTimeString(x.laps[index], { hideZero: true })
-                )
-              )
-            ],
-            {
-              quotes: true
-            }
-          )
-
-          download(
-            `${input?.value ?? ''}.csv`,
-            new Blob([new Uint8Array([0xef, 0xbb, 0xbf]), str], {
-              type: 'text/csv'
-            })
-          )
+          open()
+          setTimeout(() => input?.select(), 10)
         }}
-        class="border push-effect dark:pop-effect border-gray-500 rounded-full py-2"
       >
-        {$translate({
-          en: 'Export',
-          ja: 'エクスポート'
+        {i.translate({
+          en: 'Export as CSV',
+          ja: 'CSVとしてエクスポート'
         })}
       </button>
-    </div>
+    {/snippet}
+    {#snippet menu()}
+      <div
+        class="flex flex-col gap-4 rounded-lg p-6 bg-[rgba(255,255,255,0.8)] dark:bg-[rgba(50,50,52,0.8)] backdrop-blur shadow"
+      >
+        <div>
+          <input
+            bind:this={input}
+            title={i.translate({
+              en: 'File name',
+              ja: 'ファイル名'
+            })}
+            value="records-{new Date().toISOString().slice(0, 10)}"
+            class="w-[50vw] bg-inherit sm:w-96 focus-under border-gray-500 text-2xl"
+          />
+          .csv
+        </div>
+        <button
+          onclick={() => {
+            const maxLap = records.length
+              ? Math.max(...records.map((x) => x.laps.length))
+              : 0
+
+            const str = unparse(
+              [
+                records.map((x) => x.name),
+                ...[...Array(maxLap)].map((_, index) =>
+                  records.map((x) =>
+                    makeTimeString(x.laps[index], { hideZero: true })
+                  )
+                )
+              ],
+              {
+                quotes: true
+              }
+            )
+
+            download(
+              `${input?.value ?? ''}.csv`,
+              new Blob([new Uint8Array([0xef, 0xbb, 0xbf]), str], {
+                type: 'text/csv'
+              })
+            )
+          }}
+          class="border push-effect dark:pop-effect border-gray-500 rounded-full py-2"
+        >
+          {i.translate({
+            en: 'Export',
+            ja: 'エクスポート'
+          })}
+        </button>
+      </div>
+    {/snippet}
   </InlineModal>
   <div></div>
   {#each records as record, index (record.id)}
@@ -187,9 +190,9 @@
         class="rounded-full p-2 push-effect dark:pop-effect"
         onclick={() => {
           records = [...records.slice(0, index), ...records.slice(index + 1)]
-          localRecords.set(records)
+          localStorage.records = records
         }}
-        title={$translate({
+        title={i.translate({
           en: `Delete ${record.name}`,
           ja: `${record.name} を削除`
         })}
@@ -207,9 +210,9 @@
             class="rounded-full p-3 push-effect dark:pop-effect"
             onclick={() => {
               record.laps = [...record.laps, time]
-              localRecords.set(records)
+              localStorage.records = records
             }}
-            title={$translate({
+            title={i.translate({
               en: `Add a lap to ${record.name}`,
               ja: `${record.name} にラップを追加`
             })}
@@ -240,9 +243,9 @@
           laps: []
         }
       ]
-      localRecords.set(records)
+      localStorage.records = records
     }}
-    title={$translate({
+    title={i.translate({
       en: 'Add a record',
       ja: '記録を追加'
     })}
