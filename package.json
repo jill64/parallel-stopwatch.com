@@ -28,7 +28,7 @@
     "svelte": "5.16.6",
     "svelte-baked-cookie": "2.0.1",
     "typescanner": "0.5.3",
-    "typescript": "5.7.2",
+    "typescript": "5.7.3",
     "vite": "6.0.7",
     "@sveltejs/vite-plugin-svelte": "5.0.3",
     "vitest": "2.1.8"
