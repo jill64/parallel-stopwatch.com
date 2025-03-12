@@ -36,6 +36,7 @@
 
   let time = $derived(c.allTime + diffTime)
 
+  // eslint-disable-next-line no-undef
   setInterval(() => {
     if (counting) {
       diffTime = now() - startTime
@@ -121,6 +122,7 @@
         class="text-lg push-effect dark:pop-effect rounded-full border border-gray-500 px-6 py-2 select-none"
         onclick={() => {
           open()
+          // eslint-disable-next-line no-undef
           setTimeout(() => input?.select(), 10)
         }}
       >
@@ -226,7 +228,7 @@
     <div
       class="flex flex-col sm:flex-row sm:justify-self-start overflow-x-auto"
     >
-      {#each laps as lap}
+      {#each laps as lap, index (index)}
         <div Class="mr-10 text-2xl">
           {makeTimeString(lap)}
         </div>
