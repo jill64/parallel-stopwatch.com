@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "test": "vitest",
+    "test": "bun test **/*.test.ts",
     "test:e2e": "playwright test",
     "preview": "npm run build && vite preview",
     "format": "npx psvx",
