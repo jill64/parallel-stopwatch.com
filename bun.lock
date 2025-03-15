@@ -8,7 +8,7 @@
         "@jill64/playwright-config": "3.0.0",
         "@jill64/prettier-config": "1.0.0",
         "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
-        "@jill64/svelte-suite": "2.2.6",
+        "@jill64/svelte-suite": "2.2.7",
         "@jill64/svelte-tailwind": "1.2.80",
         "@playwright/test": "1.51.0",
         "@sveltejs/adapter-cloudflare": "5.0.3",
@@ -183,7 +183,7 @@
 
     "@jill64/sentry-sveltekit-cloudflare": ["@jill64/sentry-sveltekit-cloudflare@2.0.6", "", { "dependencies": { "@sentry/svelte": "8.51.0", "toucan-js": "4.1.0" }, "peerDependencies": { "@sveltejs/kit": "1.x || 2.x" } }, "sha512-/LhhF3BVDABSjfCdkHGtrjrwGjNdS8ySob87wohRtdb6FhCCBgiRuDRAShRgnYSD5zOqS5+veTrXiHBc4U5Isw=="],
 
-    "@jill64/svelte-dark-theme": ["@jill64/svelte-dark-theme@5.1.3", "", { "dependencies": { "@jill64/svelte-device-theme": "2.0.1", "@jill64/svelte-html": "2.0.0", "@jill64/svelte-storage": "2.0.0", "svelte-baked-cookie": "2.0.2", "svelte-feather-icons": "4.2.0", "typescanner": "0.5.3" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-6BXZM5IgHnirymqOT8igyP8dwS3GJl84Xn1+LkKJHga3RaWYGxqP4UIlpTs6l8N/nCHD6hF6oa55HIt3XJtmIg=="],
+    "@jill64/svelte-dark-theme": ["@jill64/svelte-dark-theme@5.1.4", "", { "dependencies": { "@jill64/svelte-device-theme": "2.0.1", "@jill64/svelte-html": "2.0.0", "@jill64/svelte-storage": "2.0.0", "svelte-baked-cookie": "2.0.3", "svelte-feather-icons": "4.2.0", "typescanner": "0.5.3" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-mPhK2oFt2YCjYdGLGH7Bvlh+MGj8LJEC8YyZ7lAeIv1sR5aqkSYX8xpFOAVSYJ9evgZKd1pHOY/v96wxogjQQQ=="],
 
     "@jill64/svelte-device-theme": ["@jill64/svelte-device-theme@2.0.1", "", { "dependencies": { "svelte-mq-store": "3.0.0" }, "peerDependencies": { "svelte": "^5.0.0" } }, "sha512-QHmeR60KchBXZffJOfx1wKT4m9jw3HrbzheokbpM/0Y/5UqqsyAD8xYac2KDSgUt0GPGyvyHlnOQP9+qzg7piw=="],
 
@@ -201,7 +201,7 @@
 
     "@jill64/svelte-storage": ["@jill64/svelte-storage@2.0.1", "", { "dependencies": { "@jill64/typed-storage": "4.0.1" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-GehOnAnzTmwoiBLafgixkQDacNMAqvejQXqCbrZ+M+ejjNz+1tsIG8aq4QKv7TMPjZpXMEBMoILt//mD0bt/CQ=="],
 
-    "@jill64/svelte-suite": ["@jill64/svelte-suite@2.2.6", "", { "dependencies": { "@jill64/svelte-dark-theme": "5.1.3", "@jill64/svelte-i18n": "2.2.1", "@jill64/svelte-input": "2.0.3", "@jill64/svelte-menu": "2.0.1", "@jill64/svelte-ogp": "2.0.2", "@jill64/svelte-storage": "2.0.1", "@jill64/svelte-toast": "2.1.6", "svelte-feather-icons": "4.2.0", "svelte-inline-modal": "2.0.1", "svelte-qparam": "2.1.2", "ts-serde": "1.0.8" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-UnrZwaeyJ1Sip7yKwMLMRw5iPwHrAf1y3RFlp/yraoE53Eo1LDlpbfy8kr+VRmViVABCx/y3ViVCXSZup3TwTg=="],
+    "@jill64/svelte-suite": ["@jill64/svelte-suite@2.2.7", "", { "dependencies": { "@jill64/svelte-dark-theme": "5.1.4", "@jill64/svelte-i18n": "2.2.1", "@jill64/svelte-input": "2.0.3", "@jill64/svelte-menu": "2.0.1", "@jill64/svelte-ogp": "2.0.2", "@jill64/svelte-storage": "2.0.1", "@jill64/svelte-toast": "2.1.6", "svelte-feather-icons": "4.2.0", "svelte-inline-modal": "2.0.1", "svelte-qparam": "2.1.2", "ts-serde": "1.0.8" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-Tlkfh98+b0dlkT9ifF+rRdtkgyfTgB78D/Pkk09dNwg/tCWJiJZ57JEKOES1uvEuPDGQaceTMcDmT8R4SuwPTw=="],
 
     "@jill64/svelte-tailwind": ["@jill64/svelte-tailwind@1.2.80", "", { "dependencies": { "@jill64/tailwind-grid-auto": "1.4.2", "@jill64/tailwind-reactions": "1.3.2", "autoprefixer": "10.4.20", "postcss": "8.5.1", "postcss-load-config": "6.0.1", "tailwindcss": "3.4.17" } }, "sha512-ReARe65NqNr3SMTfIrHhtECkWCTbvsUahgwwB2tdu8SZIPR3jWSIMRTlBXNquAnaj+IzjqYos1++vU9By/3BcA=="],
 
@@ -847,8 +847,6 @@
 
     "@jill64/svelte-dark-theme/@jill64/svelte-storage": ["@jill64/svelte-storage@2.0.0", "", { "dependencies": { "@jill64/typed-storage": "3.1.5" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-hOQPKxtTOTDNB7+4mz4rViNTUWB/1dUogpkG7BEuNnhRJwH/1+ZEFIuQWFxLwCpoj/9/ZCjoUKss4qL7B8P4Yg=="],
 
-    "@jill64/svelte-dark-theme/svelte-baked-cookie": ["svelte-baked-cookie@2.0.2", "", { "dependencies": { "@jill64/transform": "1.0.4", "@types/cookie": "1.0.0", "cookie": "1.0.2", "ts-serde": "1.0.8" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^4.0.0 || ^5.0.0" } }, "sha512-fPXKrSq5ScDq7hnibAHEzsYG7rAtZ8KqNLZn65yb9WEuE4hGVTz8SuZHhxk888ZxX5Jovj+SLKBkYyd/KcIRow=="],
-
     "@jill64/svelte-i18n/@jill64/svelte-storage": ["@jill64/svelte-storage@2.0.0", "", { "dependencies": { "@jill64/typed-storage": "3.1.5" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-hOQPKxtTOTDNB7+4mz4rViNTUWB/1dUogpkG7BEuNnhRJwH/1+ZEFIuQWFxLwCpoj/9/ZCjoUKss4qL7B8P4Yg=="],
 
     "@jill64/svelte-i18n/svelte-baked-cookie": ["svelte-baked-cookie@2.0.2", "", { "dependencies": { "@jill64/transform": "1.0.4", "@types/cookie": "1.0.0", "cookie": "1.0.2", "ts-serde": "1.0.8" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^4.0.0 || ^5.0.0" } }, "sha512-fPXKrSq5ScDq7hnibAHEzsYG7rAtZ8KqNLZn65yb9WEuE4hGVTz8SuZHhxk888ZxX5Jovj+SLKBkYyd/KcIRow=="],
@@ -918,10 +916,6 @@
     "youch/cookie": ["cookie@0.5.0", "", {}, "sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw=="],
 
     "@jill64/svelte-dark-theme/@jill64/svelte-storage/@jill64/typed-storage": ["@jill64/typed-storage@3.1.5", "", { "dependencies": { "ts-serde": "1.0.8" } }, "sha512-wYtZKu65VA4C5WX1NpR0rfUyz9eSb9x/RKoGi54jNV5sgCvJRRElmfhM1o3F1QUcWj76eYRY356Le8Hxbk8ARQ=="],
-
-    "@jill64/svelte-dark-theme/svelte-baked-cookie/@types/cookie": ["@types/cookie@1.0.0", "", { "dependencies": { "cookie": "*" } }, "sha512-mGFXbkDQJ6kAXByHS7QAggRXgols0mAdP4MuXgloGY1tXokvzaFFM4SMqWvf7AH0oafI7zlFJwoGWzmhDqTZ9w=="],
-
-    "@jill64/svelte-dark-theme/svelte-baked-cookie/cookie": ["cookie@1.0.2", "", {}, "sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA=="],
 
     "@jill64/svelte-i18n/@jill64/svelte-storage/@jill64/typed-storage": ["@jill64/typed-storage@3.1.5", "", { "dependencies": { "ts-serde": "1.0.8" } }, "sha512-wYtZKu65VA4C5WX1NpR0rfUyz9eSb9x/RKoGi54jNV5sgCvJRRElmfhM1o3F1QUcWj76eYRY356Le8Hxbk8ARQ=="],
 
