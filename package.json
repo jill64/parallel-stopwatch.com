@@ -24,7 +24,7 @@
     "@sveltejs/kit": "2.21.1",
     "@types/papaparse": "5.3.16",
     "nanoid": "5.1.5",
-    "papaparse": "5.5.2",
+    "papaparse": "5.5.3",
     "svelte": "5.23.0",
     "svelte-baked-cookie": "2.0.3",
     "typescanner": "0.5.3",
